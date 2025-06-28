@@ -45,11 +45,24 @@ def load_model(file_id, model_path):
         st.info("Modelo não encontrado. Baixando do Google Drive...")
         with st.spinner('Baixando modelo...'):
             download_file_from_google_drive(file_id, model_path)
+            
+            # Verificação de segurança para garantir que o arquivo baixado não é uma página de erro
+            if os.path.exists(model_path):
+                file_size_kb = os.path.getsize(model_path) / 1024
+                if file_size_kb < 100: # Se o arquivo for muito pequeno, provavelmente é um erro.
+                    os.remove(model_path) # Remove o arquivo inválido
+                    st.error("Falha no download. O arquivo baixado é muito pequeno, o que sugere um erro de permissão ou um link inválido no Google Drive. Por favor, verifique se o link de compartilhamento está como 'Qualquer pessoa com o link'.")
+                    return None
             st.success("Download do modelo concluído!")
+            
     try:
         with open(model_path, 'rb') as file:
             model = pickle.load(file)
         return model
+    except FileNotFoundError:
+        # Este erro não deve acontecer se a lógica acima estiver correta, mas é uma boa prática mantê-lo.
+        st.error(f"Arquivo do modelo '{model_path}' não foi encontrado.")
+        return None
     except Exception as e:
         st.error(f"Ocorreu um erro ao carregar o modelo: {e}")
         return None
@@ -115,8 +128,9 @@ elif pagina == 'Dashboard Interativo':
             col1, col2 = st.columns([1, 2])
             with col1:
                 st.metric('Indivíduos na Seleção', dados_filtrados.shape[0])
-                st.metric('Média de Mudanças de Humor (Low=0, Medium=1, High=2)',
-                          round(dados_filtrados['Mood_Swings'].replace({'Low': 0, 'Medium': 1, 'High': 2}).mean(), 2))
+                # Métrica corrigida para mostrar a moda (valor mais comum) em vez da média
+                mood_mode = dados_filtrados['Mood_Swings'].mode()[0]
+                st.metric('Humor Mais Comum', mood_mode)
                 st.metric('Procuraram Tratamento', '{:.2%}'.format(dados_filtrados['treatment'].value_counts(normalize=True).get('Yes', 0)))
             with col2:
                 fig, ax = plt.subplots()
