@@ -10,7 +10,7 @@ import os
 
 st.set_page_config(
     page_title="Data App - Saúde Mental",
-    page_icon="🧠",
+    page_icon="�",
     layout="wide"
 )
 
@@ -82,50 +82,56 @@ if pagina == 'Boas-vindas':
 elif pagina == 'Dashboard Interativo':
     st.header('Dashboard de Análise do Dataset')
 
-    # Carrega o dataset original para o dashboard
+    # Carrega o dataset a partir do arquivo local no repositório
     @st.cache_data
-    def load_data():
-        # URL CORRIGIDA: O link anterior estava quebrado. Este é um link funcional para o mesmo dataset.
-        url = 'https://raw.githubusercontent.com/Purvesh-Padshala/Mental-Health-Dataset/main/mental_health.csv'
-        return pd.read_csv(url)
+    def load_data(path):
+        """Carrega o dataset a partir de um arquivo local."""
+        try:
+            return pd.read_csv(path)
+        except FileNotFoundError:
+            st.error(f"Arquivo '{path}' não encontrado. Por favor, faça o upload do arquivo 'mental_health.csv' para o seu repositório no GitHub.")
+            return None
 
-    dados = load_data()
-    st.write("Visão geral dos dados brutos:")
-    st.dataframe(dados.head())
+    # Carrega os dados do arquivo local
+    dados = load_data('mental_health.csv')
 
-    st.markdown('---')
-    st.subheader("Filtros e Métricas")
+    if dados is not None:
+        st.write("Visão geral dos dados brutos:")
+        st.dataframe(dados.head())
 
-    col1, col2, col3 = st.columns(3)
+        st.markdown('---')
+        st.subheader("Filtros e Métricas")
 
-    # Filtros
-    genero = col1.selectbox("Gênero", dados['Gender'].unique())
-    hist_familiar = col2.selectbox("Histórico Familiar", dados['family_history'].unique())
-    ocupacao = col3.selectbox("Ocupação", dados['Occupation'].unique())
+        col1, col2, col3 = st.columns(3)
 
-    # Aplicando filtros
-    filtro = (dados['Gender'] == genero) & (dados['family_history'] == hist_familiar) & (dados['Occupation'] == ocupacao)
-    dados_filtrados = dados[filtro]
+        # Filtros
+        genero = col1.selectbox("Gênero", dados['Gender'].unique())
+        hist_familiar = col2.selectbox("Histórico Familiar", dados['family_history'].unique())
+        ocupacao = col3.selectbox("Ocupação", dados['Occupation'].unique())
 
-    if dados_filtrados.empty:
-        st.warning("Nenhum dado encontrado para a combinação de filtros selecionada.")
-    else:
-        col1, col2 = st.columns([1, 2])
-        # Métricas
-        with col1:
-            st.metric('Indivíduos na Seleção', dados_filtrados.shape[0])
-            st.metric('Média de Mudanças de Humor (Low=0, Medium=1, High=2)',
-                      round(dados_filtrados['Mood_Swings'].replace({'Low': 0, 'Medium': 1, 'High': 2}).mean(), 2))
-            st.metric('Procuraram Tratamento', '{:.2%}'.format(dados_filtrados['treatment'].value_counts(normalize=True).get('Yes', 0)))
+        # Aplicando filtros
+        filtro = (dados['Gender'] == genero) & (dados['family_history'] == hist_familiar) & (dados['Occupation'] == ocupacao)
+        dados_filtrados = dados[filtro]
 
-        # Gráfico
-        with col2:
-            fig, ax = plt.subplots()
-            sns.countplot(data=dados_filtrados, x='Work_Interest', ax=ax, palette='viridis')
-            ax.set_title('Distribuição de Interesse no Trabalho (Filtrado)')
-            ax.set_xlabel('Interesse no Trabalho')
-            ax.set_ylabel('Contagem')
-            st.pyplot(fig)
+        if dados_filtrados.empty:
+            st.warning("Nenhum dado encontrado para a combinação de filtros selecionada.")
+        else:
+            col1, col2 = st.columns([1, 2])
+            # Métricas
+            with col1:
+                st.metric('Indivíduos na Seleção', dados_filtrados.shape[0])
+                st.metric('Média de Mudanças de Humor (Low=0, Medium=1, High=2)',
+                          round(dados_filtrados['Mood_Swings'].replace({'Low': 0, 'Medium': 1, 'High': 2}).mean(), 2))
+                st.metric('Procuraram Tratamento', '{:.2%}'.format(dados_filtrados['treatment'].value_counts(normalize=True).get('Yes', 0)))
+
+            # Gráfico
+            with col2:
+                fig, ax = plt.subplots()
+                sns.countplot(data=dados_filtrados, x='Work_Interest', ax=ax, palette='viridis')
+                ax.set_title('Distribuição de Interesse no Trabalho (Filtrado)')
+                ax.set_xlabel('Interesse no Trabalho')
+                ax.set_ylabel('Contagem')
+                st.pyplot(fig)
 
 # --- PÁGINA 3: PREVISÃO DE INTERESSE NO TRABALHO ---
 elif pagina == 'Previsão de Interesse no Trabalho':
