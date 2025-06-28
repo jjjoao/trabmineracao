@@ -85,8 +85,8 @@ elif pagina == 'Dashboard Interativo':
     # Carrega o dataset original para o dashboard
     @st.cache_data
     def load_data():
-        # URL para o dataset bruto no GitHub para garantir que funcione online
-        url = 'https://raw.githubusercontent.com/Bhavik-Jikadara/Mental-Health-Dataset/main/mental_health.csv'
+        # URL CORRIGIDA: O link anterior estava quebrado. Este é um link funcional para o mesmo dataset.
+        url = 'https://raw.githubusercontent.com/Purvesh-Padshala/Mental-Health-Dataset/main/mental_health.csv'
         return pd.read_csv(url)
 
     dados = load_data()
