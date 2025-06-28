@@ -10,7 +10,7 @@ import os
 
 st.set_page_config(
     page_title="Data App - Saúde Mental",
-    page_icon="�",
+    page_icon="🧠",
     layout="wide"
 )
 
@@ -82,18 +82,35 @@ if pagina == 'Boas-vindas':
 elif pagina == 'Dashboard Interativo':
     st.header('Dashboard de Análise do Dataset')
 
-    # Carrega o dataset a partir do arquivo local no repositório
+    # Carrega o dataset a partir do Google Drive
     @st.cache_data
-    def load_data(path):
-        """Carrega o dataset a partir de um arquivo local."""
+    def load_data():
+        """Baixa o dataset do Google Drive se ele não existir localmente."""
+        # Link para o dataset no Google Drive (ATUALIZADO)
+        DATASET_URL = 'https://drive.google.com/uc?export=download&id=1ASanAI-8GIXbBsek87_WiaHQCM5FMRxA'
+        DATASET_PATH = 'mental_health.csv'
+
+        if not os.path.exists(DATASET_PATH):
+            st.info("Dataset não encontrado. Baixando do Google Drive... por favor, aguarde.")
+            with st.spinner("Baixando dataset..."):
+                try:
+                    r = requests.get(DATASET_URL, allow_redirects=True)
+                    r.raise_for_status()
+                    with open(DATASET_PATH, 'wb') as f:
+                        f.write(r.content)
+                    st.success("Download do dataset concluído!")
+                except requests.exceptions.RequestException as e:
+                    st.error(f"Erro ao baixar o dataset: {e}")
+                    return None
+        
         try:
-            return pd.read_csv(path)
+            return pd.read_csv(DATASET_PATH)
         except FileNotFoundError:
-            st.error(f"Arquivo '{path}' não encontrado. Por favor, faça o upload do arquivo 'mental_health.csv' para o seu repositório no GitHub.")
+            st.error(f"Arquivo '{DATASET_PATH}' não encontrado.")
             return None
 
-    # Carrega os dados do arquivo local
-    dados = load_data('mental_health.csv')
+    # Carrega os dados
+    dados = load_data()
 
     if dados is not None:
         st.write("Visão geral dos dados brutos:")
