@@ -35,36 +35,46 @@ def download_file_from_google_drive(id, destination):
                 f.write(chunk)
 
 # --- CARREGAMENTO DO MODELO ---
-MODEL_ID = '1E3NGesiaFXVGEOp8t_wBIs8BzijWSVsX'
+# ID do modelo ATUALIZADO com o novo link
+MODEL_ID = '1VWU41dE_HBi4J9sxDbmp_ck5BrAwMZ-f'
 MODEL_PATH = 'modelo_work_interest.pkl'
 
 @st.cache_resource
 def load_model(file_id, model_path):
-    """Baixa e carrega o modelo de ML."""
+    """Baixa e carrega o modelo de ML com verificação de erro robusta."""
+    # Passo 1: Tenta baixar o arquivo se ele não existir localmente.
     if not os.path.exists(model_path):
         st.info("Modelo não encontrado. Baixando do Google Drive...")
         with st.spinner('Baixando modelo...'):
             download_file_from_google_drive(file_id, model_path)
-            
-            # Verificação de segurança para garantir que o arquivo baixado não é uma página de erro
-            if os.path.exists(model_path):
-                file_size_kb = os.path.getsize(model_path) / 1024
-                if file_size_kb < 100: # Se o arquivo for muito pequeno, provavelmente é um erro.
-                    os.remove(model_path) # Remove o arquivo inválido
-                    st.error("Falha no download. O arquivo baixado é muito pequeno, o que sugere um erro de permissão ou um link inválido no Google Drive. Por favor, verifique se o link de compartilhamento está como 'Qualquer pessoa com o link'.")
-                    return None
             st.success("Download do modelo concluído!")
             
+    # Passo 2: Tenta carregar o arquivo. Se falhar, assume que o download deu errado.
     try:
         with open(model_path, 'rb') as file:
             model = pickle.load(file)
         return model
+    except pickle.UnpicklingError:
+        # Erro que indica arquivo corrompido ou conflito de versão.
+        st.error("Erro Crítico: Falha ao carregar o modelo (pickle.UnpicklingError).")
+        st.error("Isso geralmente significa que o arquivo baixado não é um modelo válido ou há um conflito de versões de bibliotecas.")
+        
+        st.subheader("Possíveis Causas e Soluções:")
+        st.markdown("""
+            1.  **Conflito de Versões (Causa Mais Provável):** A versão de bibliotecas como `PyCaret`, `scikit-learn` ou `XGBoost` usada para **salvar** o modelo é diferente da versão no ambiente online.
+            2.  **Permissões do Google Drive:** O link de compartilhamento pode não estar como **'Qualquer pessoa com o link'**.
+        """)
+        st.warning("AÇÃO NECESSÁRIA: Verifique as versões exatas das bibliotecas no seu ambiente de treinamento (Google Colab) e atualize o arquivo `requirements.txt` para que correspondam. Depois, envie a atualização para o GitHub.")
+        
+        # Deleta o arquivo corrompido para forçar um novo download na próxima execução
+        if os.path.exists(model_path):
+            os.remove(model_path)
+        return None
     except FileNotFoundError:
-        # Este erro não deve acontecer se a lógica acima estiver correta, mas é uma boa prática mantê-lo.
-        st.error(f"Arquivo do modelo '{model_path}' não foi encontrado.")
+        st.error(f"Arquivo do modelo '{model_path}' não foi encontrado. O download pode ter falhado silenciosamente.")
         return None
     except Exception as e:
-        st.error(f"Ocorreu um erro ao carregar o modelo: {e}")
+        st.error(f"Ocorreu um erro inesperado ao carregar o modelo: {e}")
         return None
 
 model = load_model(MODEL_ID, MODEL_PATH)
