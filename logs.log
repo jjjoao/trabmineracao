@@ -1,0 +1,1439 @@
+2023-04-19 21:39:25,134:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-04-19 21:39:25,135:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-04-19 21:39:25,135:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-04-19 21:39:25,135:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-04-19 21:39:25,907:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2023-04-19 21:39:26,105:INFO:Initializing load_model()
+2023-04-19 21:39:26,105:INFO:load_model(model_name=meu-modelo-para-charges, platform=None, authentication=None, verbose=True)
+2023-04-19 21:39:26,118:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:39:26,123:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator DecisionTreeRegressor from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:39:26,204:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator RandomForestRegressor from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:39:26,209:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '8.10.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.0', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.7.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.9.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.0.1', 'setuptools': '67.6.1', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.4'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-04-19 21:39:26,210:INFO:Initializing load_model()
+2023-04-19 21:39:26,210:INFO:load_model(model_name=meu-modelo-para-smoker, platform=None, authentication=None, verbose=True)
+2023-04-19 21:39:26,220:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator LabelEncoder from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:39:26,221:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:39:26,224:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator StandardScaler from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:39:26,225:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator DecisionTreeClassifier from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:39:26,247:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator RandomForestClassifier from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:39:26,248:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '8.10.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.0', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.7.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.9.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.0.1', 'setuptools': '67.6.1', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.4'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-04-19 21:40:54,401:INFO:Initializing load_model()
+2023-04-19 21:40:54,401:INFO:load_model(model_name=meu-modelo-para-charges, platform=None, authentication=None, verbose=True)
+2023-04-19 21:40:54,403:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:40:54,406:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator DecisionTreeRegressor from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:40:54,490:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator RandomForestRegressor from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:40:54,491:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '8.10.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.0', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.7.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.9.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.0.1', 'setuptools': '67.6.1', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.4'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-04-19 21:40:54,493:INFO:Initializing load_model()
+2023-04-19 21:40:54,493:INFO:load_model(model_name=meu-modelo-para-smoker, platform=None, authentication=None, verbose=True)
+2023-04-19 21:40:54,493:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator LabelEncoder from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:40:54,494:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:40:54,499:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator StandardScaler from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:40:54,499:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator DecisionTreeClassifier from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:40:54,523:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator RandomForestClassifier from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:40:54,525:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '8.10.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.0', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.7.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.9.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.0.1', 'setuptools': '67.6.1', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.4'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-04-19 21:41:30,422:INFO:Initializing load_model()
+2023-04-19 21:41:30,422:INFO:load_model(model_name=meu-modelo-para-charges, platform=None, authentication=None, verbose=True)
+2023-04-19 21:41:30,423:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:41:30,427:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator DecisionTreeRegressor from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:41:30,510:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator RandomForestRegressor from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:41:30,512:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '8.10.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.0', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.7.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.9.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.0.1', 'setuptools': '67.6.1', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.4'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-04-19 21:41:30,513:INFO:Initializing load_model()
+2023-04-19 21:41:30,514:INFO:load_model(model_name=meu-modelo-para-smoker, platform=None, authentication=None, verbose=True)
+2023-04-19 21:41:30,514:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator LabelEncoder from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:41:30,515:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:41:30,519:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator StandardScaler from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:41:30,519:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator DecisionTreeClassifier from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:41:30,540:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator RandomForestClassifier from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:41:30,542:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '8.10.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.0', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.7.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.9.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.0.1', 'setuptools': '67.6.1', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.4'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-04-19 21:41:30,614:INFO:Initializing predict_model()
+2023-04-19 21:41:30,614:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000126FF64D000>, estimator=Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['age', 'bmi', 'children'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sex', 'smoker', 'region'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['sex', 'smoker...
+                ('onehot_encoding',
+                 TransformerWrapper(include=['region'],
+                                    transformer=OneHotEncoder(cols=['region'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('actual_estimator',
+                 RandomForestRegressor(bootstrap=False,
+                                       criterion='absolute_error', max_depth=9,
+                                       max_features='log2',
+                                       min_impurity_decrease=0.001,
+                                       min_samples_leaf=4, n_estimators=220,
+                                       n_jobs=-1, random_state=5749))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, replace_labels_in_column=<function _SupervisedExperiment.predict_model.<locals>.replace_labels_in_column at 0x00000126FD873AC0>)
+2023-04-19 21:41:30,615:INFO:Checking exceptions
+2023-04-19 21:41:30,615:INFO:Preloading libraries
+2023-04-19 21:41:30,615:INFO:Set up data.
+2023-04-19 21:41:30,625:INFO:Set up index.
+2023-04-19 21:41:38,460:INFO:Initializing load_model()
+2023-04-19 21:41:38,460:INFO:load_model(model_name=meu-modelo-para-charges, platform=None, authentication=None, verbose=True)
+2023-04-19 21:41:38,461:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:41:38,466:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator DecisionTreeRegressor from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:41:38,553:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator RandomForestRegressor from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:41:38,554:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '8.10.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.0', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.7.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.9.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.0.1', 'setuptools': '67.6.1', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.4'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-04-19 21:41:38,555:INFO:Initializing load_model()
+2023-04-19 21:41:38,555:INFO:load_model(model_name=meu-modelo-para-smoker, platform=None, authentication=None, verbose=True)
+2023-04-19 21:41:38,556:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator LabelEncoder from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:41:38,557:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:41:38,560:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator StandardScaler from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:41:38,560:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator DecisionTreeClassifier from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:41:38,587:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator RandomForestClassifier from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:41:38,588:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '8.10.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.0', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.7.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.9.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.0.1', 'setuptools': '67.6.1', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.4'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-04-19 21:41:39,599:INFO:Initializing load_model()
+2023-04-19 21:41:39,599:INFO:load_model(model_name=meu-modelo-para-charges, platform=None, authentication=None, verbose=True)
+2023-04-19 21:41:39,601:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:41:39,605:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator DecisionTreeRegressor from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:41:39,687:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator RandomForestRegressor from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:41:39,688:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '8.10.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.0', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.7.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.9.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.0.1', 'setuptools': '67.6.1', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.4'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-04-19 21:41:39,689:INFO:Initializing load_model()
+2023-04-19 21:41:39,689:INFO:load_model(model_name=meu-modelo-para-smoker, platform=None, authentication=None, verbose=True)
+2023-04-19 21:41:39,690:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator LabelEncoder from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:41:39,690:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:41:39,694:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator StandardScaler from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:41:39,694:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator DecisionTreeClassifier from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:41:39,719:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator RandomForestClassifier from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:41:39,720:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '8.10.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.0', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.7.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.9.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.0.1', 'setuptools': '67.6.1', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.4'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-04-19 21:41:39,778:INFO:Initializing predict_model()
+2023-04-19 21:41:39,783:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000126FF64ED40>, estimator=Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['age', 'bmi', 'children'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sex', 'smoker', 'region'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['sex', 'smoker...
+                ('onehot_encoding',
+                 TransformerWrapper(include=['region'],
+                                    transformer=OneHotEncoder(cols=['region'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('actual_estimator',
+                 RandomForestRegressor(bootstrap=False,
+                                       criterion='absolute_error', max_depth=9,
+                                       max_features='log2',
+                                       min_impurity_decrease=0.001,
+                                       min_samples_leaf=4, n_estimators=220,
+                                       n_jobs=-1, random_state=5749))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, replace_labels_in_column=<function _SupervisedExperiment.predict_model.<locals>.replace_labels_in_column at 0x00000126FA7D41F0>)
+2023-04-19 21:41:39,784:INFO:Checking exceptions
+2023-04-19 21:41:39,784:INFO:Preloading libraries
+2023-04-19 21:41:39,785:INFO:Set up data.
+2023-04-19 21:41:39,789:INFO:Set up index.
+2023-04-19 21:41:50,688:INFO:Initializing load_model()
+2023-04-19 21:41:50,688:INFO:load_model(model_name=meu-modelo-para-charges, platform=None, authentication=None, verbose=True)
+2023-04-19 21:41:50,689:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:41:50,693:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator DecisionTreeRegressor from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:41:50,781:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator RandomForestRegressor from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:41:50,783:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '8.10.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.0', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.7.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.9.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.0.1', 'setuptools': '67.6.1', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.4'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-04-19 21:41:50,785:INFO:Initializing load_model()
+2023-04-19 21:41:50,785:INFO:load_model(model_name=meu-modelo-para-smoker, platform=None, authentication=None, verbose=True)
+2023-04-19 21:41:50,786:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator LabelEncoder from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:41:50,786:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:41:50,790:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator StandardScaler from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:41:50,790:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator DecisionTreeClassifier from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:41:50,821:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator RandomForestClassifier from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:41:50,822:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '8.10.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.0', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.7.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.9.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.0.1', 'setuptools': '67.6.1', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.4'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-04-19 21:41:54,537:INFO:Initializing load_model()
+2023-04-19 21:41:54,538:INFO:load_model(model_name=meu-modelo-para-charges, platform=None, authentication=None, verbose=True)
+2023-04-19 21:41:54,539:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:41:54,544:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator DecisionTreeRegressor from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:41:54,628:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator RandomForestRegressor from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:41:54,630:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '8.10.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.0', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.7.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.9.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.0.1', 'setuptools': '67.6.1', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.4'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-04-19 21:41:54,632:INFO:Initializing load_model()
+2023-04-19 21:41:54,632:INFO:load_model(model_name=meu-modelo-para-smoker, platform=None, authentication=None, verbose=True)
+2023-04-19 21:41:54,632:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator LabelEncoder from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:41:54,633:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:41:54,636:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator StandardScaler from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:41:54,636:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator DecisionTreeClassifier from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:41:54,663:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator RandomForestClassifier from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:41:54,665:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '8.10.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.0', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.7.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.9.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.0.1', 'setuptools': '67.6.1', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.4'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-04-19 21:41:54,732:INFO:Initializing predict_model()
+2023-04-19 21:41:54,733:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000126FF7B14E0>, estimator=Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['age', 'bmi', 'children'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sex', 'smoker', 'region'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['sex', 'smoker...
+                ('onehot_encoding',
+                 TransformerWrapper(include=['region'],
+                                    transformer=OneHotEncoder(cols=['region'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('actual_estimator',
+                 RandomForestRegressor(bootstrap=False,
+                                       criterion='absolute_error', max_depth=9,
+                                       max_features='log2',
+                                       min_impurity_decrease=0.001,
+                                       min_samples_leaf=4, n_estimators=220,
+                                       n_jobs=-1, random_state=5749))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, replace_labels_in_column=<function _SupervisedExperiment.predict_model.<locals>.replace_labels_in_column at 0x00000126FF62B880>)
+2023-04-19 21:41:54,733:INFO:Checking exceptions
+2023-04-19 21:41:54,733:INFO:Preloading libraries
+2023-04-19 21:41:54,733:INFO:Set up data.
+2023-04-19 21:41:54,737:INFO:Set up index.
+2023-04-19 21:41:59,442:INFO:Initializing load_model()
+2023-04-19 21:41:59,443:INFO:load_model(model_name=meu-modelo-para-charges, platform=None, authentication=None, verbose=True)
+2023-04-19 21:41:59,444:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:41:59,449:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator DecisionTreeRegressor from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:41:59,534:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator RandomForestRegressor from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:41:59,535:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '8.10.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.0', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.7.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.9.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.0.1', 'setuptools': '67.6.1', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.4'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-04-19 21:41:59,537:INFO:Initializing load_model()
+2023-04-19 21:41:59,537:INFO:load_model(model_name=meu-modelo-para-smoker, platform=None, authentication=None, verbose=True)
+2023-04-19 21:41:59,537:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator LabelEncoder from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:41:59,538:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:41:59,542:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator StandardScaler from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:41:59,543:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator DecisionTreeClassifier from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:41:59,565:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator RandomForestClassifier from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:41:59,566:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '8.10.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.0', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.7.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.9.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.0.1', 'setuptools': '67.6.1', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.4'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-04-19 21:42:00,637:INFO:Initializing load_model()
+2023-04-19 21:42:00,637:INFO:load_model(model_name=meu-modelo-para-charges, platform=None, authentication=None, verbose=True)
+2023-04-19 21:42:00,639:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:42:00,644:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator DecisionTreeRegressor from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:42:00,727:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator RandomForestRegressor from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:42:00,728:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '8.10.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.0', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.7.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.9.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.0.1', 'setuptools': '67.6.1', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.4'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-04-19 21:42:00,730:INFO:Initializing load_model()
+2023-04-19 21:42:00,731:INFO:load_model(model_name=meu-modelo-para-smoker, platform=None, authentication=None, verbose=True)
+2023-04-19 21:42:00,731:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator LabelEncoder from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:42:00,732:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:42:00,736:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator StandardScaler from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:42:00,736:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator DecisionTreeClassifier from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:42:00,761:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator RandomForestClassifier from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:42:00,763:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '8.10.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.0', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.7.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.9.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.0.1', 'setuptools': '67.6.1', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.4'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-04-19 21:42:00,811:INFO:Initializing predict_model()
+2023-04-19 21:42:00,812:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000126FF6F4520>, estimator=Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['age', 'bmi', 'children'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sex', 'smoker', 'region'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['sex', 'smoker...
+                ('onehot_encoding',
+                 TransformerWrapper(include=['region'],
+                                    transformer=OneHotEncoder(cols=['region'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('actual_estimator',
+                 RandomForestRegressor(bootstrap=False,
+                                       criterion='absolute_error', max_depth=9,
+                                       max_features='log2',
+                                       min_impurity_decrease=0.001,
+                                       min_samples_leaf=4, n_estimators=220,
+                                       n_jobs=-1, random_state=5749))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, replace_labels_in_column=<function _SupervisedExperiment.predict_model.<locals>.replace_labels_in_column at 0x00000126FF62BD90>)
+2023-04-19 21:42:00,812:INFO:Checking exceptions
+2023-04-19 21:42:00,813:INFO:Preloading libraries
+2023-04-19 21:42:00,813:INFO:Set up data.
+2023-04-19 21:42:00,816:INFO:Set up index.
+2023-04-19 21:44:06,274:INFO:Initializing load_model()
+2023-04-19 21:44:06,274:INFO:load_model(model_name=meu-modelo-para-charges, platform=None, authentication=None, verbose=True)
+2023-04-19 21:44:06,276:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:06,280:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator DecisionTreeRegressor from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:06,363:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator RandomForestRegressor from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:06,364:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '8.10.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.0', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.7.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.9.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.0.1', 'setuptools': '67.6.1', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.4'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-04-19 21:44:06,365:INFO:Initializing load_model()
+2023-04-19 21:44:06,365:INFO:load_model(model_name=meu-modelo-para-smoker, platform=None, authentication=None, verbose=True)
+2023-04-19 21:44:06,365:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator LabelEncoder from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:06,366:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:06,370:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator StandardScaler from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:06,370:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator DecisionTreeClassifier from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:06,394:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator RandomForestClassifier from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:06,396:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '8.10.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.0', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.7.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.9.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.0.1', 'setuptools': '67.6.1', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.4'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-04-19 21:44:09,177:INFO:Initializing load_model()
+2023-04-19 21:44:09,177:INFO:load_model(model_name=meu-modelo-para-charges, platform=None, authentication=None, verbose=True)
+2023-04-19 21:44:09,179:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:09,183:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator DecisionTreeRegressor from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:09,268:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator RandomForestRegressor from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:09,270:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '8.10.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.0', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.7.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.9.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.0.1', 'setuptools': '67.6.1', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.4'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-04-19 21:44:09,273:INFO:Initializing load_model()
+2023-04-19 21:44:09,274:INFO:load_model(model_name=meu-modelo-para-smoker, platform=None, authentication=None, verbose=True)
+2023-04-19 21:44:09,274:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator LabelEncoder from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:09,275:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:09,278:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator StandardScaler from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:09,278:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator DecisionTreeClassifier from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:09,301:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator RandomForestClassifier from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:09,302:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '8.10.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.0', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.7.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.9.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.0.1', 'setuptools': '67.6.1', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.4'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-04-19 21:44:17,025:INFO:Initializing load_model()
+2023-04-19 21:44:17,025:INFO:load_model(model_name=meu-modelo-para-charges, platform=None, authentication=None, verbose=True)
+2023-04-19 21:44:17,026:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:17,031:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator DecisionTreeRegressor from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:17,119:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator RandomForestRegressor from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:17,120:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '8.10.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.0', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.7.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.9.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.0.1', 'setuptools': '67.6.1', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.4'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-04-19 21:44:17,122:INFO:Initializing load_model()
+2023-04-19 21:44:17,122:INFO:load_model(model_name=meu-modelo-para-smoker, platform=None, authentication=None, verbose=True)
+2023-04-19 21:44:17,122:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator LabelEncoder from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:17,123:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:17,126:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator StandardScaler from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:17,126:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator DecisionTreeClassifier from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:17,153:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator RandomForestClassifier from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:17,154:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '8.10.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.0', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.7.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.9.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.0.1', 'setuptools': '67.6.1', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.4'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-04-19 21:44:25,556:INFO:Initializing load_model()
+2023-04-19 21:44:25,556:INFO:load_model(model_name=meu-modelo-para-charges, platform=None, authentication=None, verbose=True)
+2023-04-19 21:44:25,557:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:25,561:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator DecisionTreeRegressor from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:25,644:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator RandomForestRegressor from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:25,645:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '8.10.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.0', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.7.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.9.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.0.1', 'setuptools': '67.6.1', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.4'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-04-19 21:44:25,649:INFO:Initializing load_model()
+2023-04-19 21:44:25,649:INFO:load_model(model_name=meu-modelo-para-smoker, platform=None, authentication=None, verbose=True)
+2023-04-19 21:44:25,650:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator LabelEncoder from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:25,651:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:25,654:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator StandardScaler from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:25,654:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator DecisionTreeClassifier from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:25,677:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator RandomForestClassifier from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:25,679:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '8.10.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.0', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.7.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.9.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.0.1', 'setuptools': '67.6.1', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.4'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-04-19 21:44:25,726:INFO:Initializing predict_model()
+2023-04-19 21:44:25,726:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000126FF6C3580>, estimator=Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['age', 'bmi', 'children',
+                                             'charges'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sex', 'region'],
+                                    transformer=SimpleImputer(strategy='m...
+                                    transformer=OneHotEncoder(cols=['region'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('actual_estimator',
+                 RandomForestClassifier(class_weight={}, max_depth=6,
+                                        max_features=1.0,
+                                        min_impurity_decrease=0.001,
+                                        min_samples_leaf=5, min_samples_split=9,
+                                        n_estimators=60, n_jobs=2,
+                                        random_state=8872))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, replace_labels_in_column=<function _SupervisedExperiment.predict_model.<locals>.replace_labels_in_column at 0x00000126FF62BD00>)
+2023-04-19 21:44:25,726:INFO:Checking exceptions
+2023-04-19 21:44:25,726:INFO:Preloading libraries
+2023-04-19 21:44:25,726:INFO:Set up data.
+2023-04-19 21:44:25,730:INFO:Set up index.
+2023-04-19 21:44:31,672:INFO:Initializing load_model()
+2023-04-19 21:44:31,673:INFO:load_model(model_name=meu-modelo-para-charges, platform=None, authentication=None, verbose=True)
+2023-04-19 21:44:31,674:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:31,678:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator DecisionTreeRegressor from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:31,760:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator RandomForestRegressor from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:31,761:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '8.10.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.0', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.7.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.9.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.0.1', 'setuptools': '67.6.1', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.4'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-04-19 21:44:31,764:INFO:Initializing load_model()
+2023-04-19 21:44:31,764:INFO:load_model(model_name=meu-modelo-para-smoker, platform=None, authentication=None, verbose=True)
+2023-04-19 21:44:31,765:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator LabelEncoder from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:31,765:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:31,768:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator StandardScaler from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:31,768:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator DecisionTreeClassifier from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:31,791:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator RandomForestClassifier from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:31,793:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '8.10.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.0', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.7.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.9.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.0.1', 'setuptools': '67.6.1', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.4'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-04-19 21:44:32,793:INFO:Initializing load_model()
+2023-04-19 21:44:32,793:INFO:load_model(model_name=meu-modelo-para-charges, platform=None, authentication=None, verbose=True)
+2023-04-19 21:44:32,795:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:32,799:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator DecisionTreeRegressor from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:32,887:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator RandomForestRegressor from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:32,888:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '8.10.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.0', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.7.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.9.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.0.1', 'setuptools': '67.6.1', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.4'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-04-19 21:44:32,890:INFO:Initializing load_model()
+2023-04-19 21:44:32,890:INFO:load_model(model_name=meu-modelo-para-smoker, platform=None, authentication=None, verbose=True)
+2023-04-19 21:44:32,891:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator LabelEncoder from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:32,891:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:32,895:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator StandardScaler from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:32,895:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator DecisionTreeClassifier from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:32,919:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator RandomForestClassifier from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:32,921:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '8.10.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.0', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.7.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.9.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.0.1', 'setuptools': '67.6.1', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.4'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-04-19 21:44:32,973:INFO:Initializing predict_model()
+2023-04-19 21:44:32,973:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000126FF60F250>, estimator=Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['age', 'bmi', 'children',
+                                             'charges'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sex', 'region'],
+                                    transformer=SimpleImputer(strategy='m...
+                                    transformer=OneHotEncoder(cols=['region'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('actual_estimator',
+                 RandomForestClassifier(class_weight={}, max_depth=6,
+                                        max_features=1.0,
+                                        min_impurity_decrease=0.001,
+                                        min_samples_leaf=5, min_samples_split=9,
+                                        n_estimators=60, n_jobs=2,
+                                        random_state=8872))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, replace_labels_in_column=<function _SupervisedExperiment.predict_model.<locals>.replace_labels_in_column at 0x00000126FD7CE050>)
+2023-04-19 21:44:32,974:INFO:Checking exceptions
+2023-04-19 21:44:32,974:INFO:Preloading libraries
+2023-04-19 21:44:32,974:INFO:Set up data.
+2023-04-19 21:44:32,979:INFO:Set up index.
+2023-04-19 21:44:37,702:INFO:Initializing load_model()
+2023-04-19 21:44:37,702:INFO:load_model(model_name=meu-modelo-para-charges, platform=None, authentication=None, verbose=True)
+2023-04-19 21:44:37,704:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:37,707:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator DecisionTreeRegressor from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:37,790:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator RandomForestRegressor from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:37,791:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '8.10.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.0', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.7.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.9.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.0.1', 'setuptools': '67.6.1', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.4'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-04-19 21:44:37,794:INFO:Initializing load_model()
+2023-04-19 21:44:37,794:INFO:load_model(model_name=meu-modelo-para-smoker, platform=None, authentication=None, verbose=True)
+2023-04-19 21:44:37,796:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator LabelEncoder from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:37,796:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:37,799:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator StandardScaler from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:37,799:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator DecisionTreeClassifier from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:37,836:INFO:Initializing load_model()
+2023-04-19 21:44:37,839:INFO:load_model(model_name=meu-modelo-para-charges, platform=None, authentication=None, verbose=True)
+2023-04-19 21:44:37,840:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator RandomForestClassifier from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:37,842:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '8.10.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.0', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.7.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.9.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.0.1', 'setuptools': '67.6.1', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.4'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-04-19 21:44:37,843:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:37,848:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator DecisionTreeRegressor from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:38,110:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator RandomForestRegressor from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:38,111:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '8.10.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.0', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.7.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.9.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.0.1', 'setuptools': '67.6.1', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.4'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-04-19 21:44:38,113:INFO:Initializing load_model()
+2023-04-19 21:44:38,113:INFO:load_model(model_name=meu-modelo-para-smoker, platform=None, authentication=None, verbose=True)
+2023-04-19 21:44:38,113:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator LabelEncoder from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:38,114:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:38,117:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator StandardScaler from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:38,117:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator DecisionTreeClassifier from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:38,139:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator RandomForestClassifier from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:38,141:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '8.10.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.0', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.7.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.9.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.0.1', 'setuptools': '67.6.1', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.4'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-04-19 21:44:38,185:INFO:Initializing predict_model()
+2023-04-19 21:44:38,185:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000126FF60FE20>, estimator=Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['age', 'bmi', 'children',
+                                             'charges'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sex', 'region'],
+                                    transformer=SimpleImputer(strategy='m...
+                                    transformer=OneHotEncoder(cols=['region'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('actual_estimator',
+                 RandomForestClassifier(class_weight={}, max_depth=6,
+                                        max_features=1.0,
+                                        min_impurity_decrease=0.001,
+                                        min_samples_leaf=5, min_samples_split=9,
+                                        n_estimators=60, n_jobs=2,
+                                        random_state=8872))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, replace_labels_in_column=<function _SupervisedExperiment.predict_model.<locals>.replace_labels_in_column at 0x00000126FF62B520>)
+2023-04-19 21:44:38,185:INFO:Checking exceptions
+2023-04-19 21:44:38,185:INFO:Preloading libraries
+2023-04-19 21:44:38,186:INFO:Set up data.
+2023-04-19 21:44:38,189:INFO:Set up index.
+2023-04-19 21:44:44,903:INFO:Initializing load_model()
+2023-04-19 21:44:44,903:INFO:load_model(model_name=meu-modelo-para-charges, platform=None, authentication=None, verbose=True)
+2023-04-19 21:44:44,905:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:44,909:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator DecisionTreeRegressor from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:44,994:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator RandomForestRegressor from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:44,995:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '8.10.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.0', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.7.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.9.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.0.1', 'setuptools': '67.6.1', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.4'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-04-19 21:44:44,997:INFO:Initializing load_model()
+2023-04-19 21:44:44,997:INFO:load_model(model_name=meu-modelo-para-smoker, platform=None, authentication=None, verbose=True)
+2023-04-19 21:44:44,998:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator LabelEncoder from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:44,998:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:45,002:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator StandardScaler from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:45,002:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator DecisionTreeClassifier from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:45,027:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator RandomForestClassifier from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:45,028:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '8.10.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.0', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.7.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.9.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.0.1', 'setuptools': '67.6.1', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.4'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-04-19 21:44:45,887:INFO:Initializing load_model()
+2023-04-19 21:44:45,888:INFO:load_model(model_name=meu-modelo-para-charges, platform=None, authentication=None, verbose=True)
+2023-04-19 21:44:45,893:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:45,897:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator DecisionTreeRegressor from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:45,978:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator RandomForestRegressor from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:45,980:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '8.10.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.0', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.7.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.9.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.0.1', 'setuptools': '67.6.1', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.4'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-04-19 21:44:45,984:INFO:Initializing load_model()
+2023-04-19 21:44:45,985:INFO:load_model(model_name=meu-modelo-para-smoker, platform=None, authentication=None, verbose=True)
+2023-04-19 21:44:45,989:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator LabelEncoder from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:45,990:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:45,994:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator StandardScaler from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:45,995:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator DecisionTreeClassifier from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:46,020:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator RandomForestClassifier from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:46,021:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '8.10.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.0', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.7.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.9.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.0.1', 'setuptools': '67.6.1', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.4'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-04-19 21:44:46,062:INFO:Initializing predict_model()
+2023-04-19 21:44:46,062:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000126FF6F5180>, estimator=Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['age', 'bmi', 'children',
+                                             'charges'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sex', 'region'],
+                                    transformer=SimpleImputer(strategy='m...
+                                    transformer=OneHotEncoder(cols=['region'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('actual_estimator',
+                 RandomForestClassifier(class_weight={}, max_depth=6,
+                                        max_features=1.0,
+                                        min_impurity_decrease=0.001,
+                                        min_samples_leaf=5, min_samples_split=9,
+                                        n_estimators=60, n_jobs=2,
+                                        random_state=8872))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, replace_labels_in_column=<function _SupervisedExperiment.predict_model.<locals>.replace_labels_in_column at 0x00000126FF62B9A0>)
+2023-04-19 21:44:46,062:INFO:Checking exceptions
+2023-04-19 21:44:46,062:INFO:Preloading libraries
+2023-04-19 21:44:46,063:INFO:Set up data.
+2023-04-19 21:44:46,066:INFO:Set up index.
+2023-04-19 21:44:49,841:INFO:Initializing load_model()
+2023-04-19 21:44:49,842:INFO:load_model(model_name=meu-modelo-para-charges, platform=None, authentication=None, verbose=True)
+2023-04-19 21:44:49,843:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:49,847:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator DecisionTreeRegressor from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:49,945:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator RandomForestRegressor from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:49,946:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '8.10.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.0', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.7.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.9.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.0.1', 'setuptools': '67.6.1', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.4'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-04-19 21:44:49,948:INFO:Initializing load_model()
+2023-04-19 21:44:49,948:INFO:load_model(model_name=meu-modelo-para-smoker, platform=None, authentication=None, verbose=True)
+2023-04-19 21:44:49,949:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator LabelEncoder from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:49,949:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:49,952:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator StandardScaler from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:49,953:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator DecisionTreeClassifier from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:49,979:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator RandomForestClassifier from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:49,981:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '8.10.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.0', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.7.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.9.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.0.1', 'setuptools': '67.6.1', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.4'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-04-19 21:44:50,943:INFO:Initializing load_model()
+2023-04-19 21:44:50,944:INFO:load_model(model_name=meu-modelo-para-charges, platform=None, authentication=None, verbose=True)
+2023-04-19 21:44:50,946:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:50,949:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator DecisionTreeRegressor from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:51,040:INFO:Initializing load_model()
+2023-04-19 21:44:51,040:INFO:load_model(model_name=meu-modelo-para-charges, platform=None, authentication=None, verbose=True)
+2023-04-19 21:44:51,042:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:51,047:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator DecisionTreeRegressor from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:51,051:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator RandomForestRegressor from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:51,052:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '8.10.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.0', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.7.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.9.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.0.1', 'setuptools': '67.6.1', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.4'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-04-19 21:44:51,057:INFO:Initializing load_model()
+2023-04-19 21:44:51,058:INFO:load_model(model_name=meu-modelo-para-smoker, platform=None, authentication=None, verbose=True)
+2023-04-19 21:44:51,059:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator LabelEncoder from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:51,060:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:51,063:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator StandardScaler from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:51,063:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator DecisionTreeRegressor from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:51,063:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator DecisionTreeClassifier from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:51,093:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator RandomForestClassifier from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:51,094:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '8.10.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.0', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.7.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.9.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.0.1', 'setuptools': '67.6.1', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.4'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-04-19 21:44:51,350:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator RandomForestRegressor from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:51,353:INFO:Initializing load_model()
+2023-04-19 21:44:51,353:INFO:load_model(model_name=meu-modelo-para-smoker, platform=None, authentication=None, verbose=True)
+2023-04-19 21:44:51,353:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator LabelEncoder from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:51,354:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:51,357:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator StandardScaler from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:51,357:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator DecisionTreeClassifier from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:51,383:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator RandomForestClassifier from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:51,384:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '8.10.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.0', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.7.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.9.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.0.1', 'setuptools': '67.6.1', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.4'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-04-19 21:44:51,425:INFO:Initializing predict_model()
+2023-04-19 21:44:51,426:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x00000126FF7B3640>, estimator=Pipeline(memory=FastMemory(location=/tmp/joblib),
+         steps=[('label_encoding',
+                 TransformerWrapperWithInverse(transformer=LabelEncoder())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['age', 'bmi', 'children',
+                                             'charges'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['sex', 'region'],
+                                    transformer=SimpleImputer(strategy='m...
+                                    transformer=OneHotEncoder(cols=['region'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('actual_estimator',
+                 RandomForestClassifier(class_weight={}, max_depth=6,
+                                        max_features=1.0,
+                                        min_impurity_decrease=0.001,
+                                        min_samples_leaf=5, min_samples_split=9,
+                                        n_estimators=60, n_jobs=2,
+                                        random_state=8872))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, replace_labels_in_column=<function _SupervisedExperiment.predict_model.<locals>.replace_labels_in_column at 0x00000126FF62B520>)
+2023-04-19 21:44:51,426:INFO:Checking exceptions
+2023-04-19 21:44:51,426:INFO:Preloading libraries
+2023-04-19 21:44:51,426:INFO:Set up data.
+2023-04-19 21:44:51,429:INFO:Set up index.
+2023-04-19 21:44:55,984:INFO:Initializing load_model()
+2023-04-19 21:44:55,985:INFO:load_model(model_name=meu-modelo-para-charges, platform=None, authentication=None, verbose=True)
+2023-04-19 21:44:55,986:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:55,990:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator DecisionTreeRegressor from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:56,066:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator RandomForestRegressor from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:56,068:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '8.10.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.0', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.7.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.9.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.0.1', 'setuptools': '67.6.1', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.4'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-04-19 21:44:56,068:INFO:Initializing load_model()
+2023-04-19 21:44:56,069:INFO:load_model(model_name=meu-modelo-para-smoker, platform=None, authentication=None, verbose=True)
+2023-04-19 21:44:56,069:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator LabelEncoder from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:56,070:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:56,074:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator StandardScaler from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:56,075:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator DecisionTreeClassifier from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:56,097:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator RandomForestClassifier from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:44:56,098:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '8.10.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.0', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.7.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.9.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.0.1', 'setuptools': '67.6.1', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.4'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-04-19 21:45:00,635:INFO:Initializing load_model()
+2023-04-19 21:45:00,636:INFO:load_model(model_name=meu-modelo-para-charges, platform=None, authentication=None, verbose=True)
+2023-04-19 21:45:00,639:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:45:00,642:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator DecisionTreeRegressor from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:45:00,730:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator RandomForestRegressor from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:45:00,731:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '8.10.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.0', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.7.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.9.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.0.1', 'setuptools': '67.6.1', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.4'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-04-19 21:45:00,732:INFO:Initializing load_model()
+2023-04-19 21:45:00,732:INFO:load_model(model_name=meu-modelo-para-smoker, platform=None, authentication=None, verbose=True)
+2023-04-19 21:45:00,733:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator LabelEncoder from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:45:00,734:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:45:00,737:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator StandardScaler from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:45:00,738:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator DecisionTreeClassifier from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:45:00,763:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator RandomForestClassifier from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:45:00,764:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '8.10.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.0', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.7.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.9.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.0.1', 'setuptools': '67.6.1', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.4'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-04-19 21:45:02,578:INFO:Initializing load_model()
+2023-04-19 21:45:02,578:INFO:load_model(model_name=meu-modelo-para-charges, platform=None, authentication=None, verbose=True)
+2023-04-19 21:45:02,580:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:45:02,584:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator DecisionTreeRegressor from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:45:02,668:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator RandomForestRegressor from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:45:02,669:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '8.10.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.0', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.7.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.9.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.0.1', 'setuptools': '67.6.1', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.4'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-04-19 21:45:02,671:INFO:Initializing load_model()
+2023-04-19 21:45:02,671:INFO:load_model(model_name=meu-modelo-para-smoker, platform=None, authentication=None, verbose=True)
+2023-04-19 21:45:02,672:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator LabelEncoder from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:45:02,673:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:45:02,676:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator StandardScaler from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:45:02,676:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator DecisionTreeClassifier from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:45:02,700:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator RandomForestClassifier from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:45:02,701:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '8.10.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.0', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.7.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.9.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.0.1', 'setuptools': '67.6.1', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.4'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-04-19 21:45:07,797:INFO:Initializing load_model()
+2023-04-19 21:45:07,797:INFO:load_model(model_name=meu-modelo-para-charges, platform=None, authentication=None, verbose=True)
+2023-04-19 21:45:07,799:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:45:07,803:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator DecisionTreeRegressor from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:45:07,889:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator RandomForestRegressor from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:45:07,890:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '8.10.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.0', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.7.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.9.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.0.1', 'setuptools': '67.6.1', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.4'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+  warnings.warn(
+
+2023-04-19 21:45:07,891:INFO:Initializing load_model()
+2023-04-19 21:45:07,892:INFO:load_model(model_name=meu-modelo-para-smoker, platform=None, authentication=None, verbose=True)
+2023-04-19 21:45:07,892:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator LabelEncoder from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:45:07,893:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator SimpleImputer from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:45:07,895:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator StandardScaler from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:45:07,896:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator DecisionTreeClassifier from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:45:07,920:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\sklearn\base.py:299: UserWarning: Trying to unpickle estimator RandomForestClassifier from version 1.2.2 when using version 1.2.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations
+  warnings.warn(
+
+2023-04-19 21:45:07,921:WARNING:C:\Users\Pichau\anaconda3\lib\site-packages\pycaret\internal\pipeline.py:135: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.3.1', 'setuptools': '65.6.3', 'pycaret': '3.0.0', 'IPython': '8.10.0', 'ipywidgets': '7.6.5', 'tqdm': '4.64.1', 'numpy': '1.23.5', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.0', 'joblib': '1.2.0', 'sklearn': '1.2.1', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.28.1', 'matplotlib': '3.7.0', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.9.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.0'}, 'python': {'version': '3.10.9', 'machine': 'AMD64'}}
+pickle: {'deps_info': {'pip': '23.0.1', 'setuptools': '67.6.1', 'pycaret': '3.0.0', 'IPython': '7.34.0', 'ipywidgets': '7.7.1', 'tqdm': '4.65.0', 'numpy': '1.22.4', 'pandas': '1.5.3', 'jinja2': '3.1.2', 'scipy': '1.10.1', 'joblib': '1.2.0', 'sklearn': '1.2.2', 'pyod': '1.0.9', 'imblearn': '0.10.1', 'category_encoders': '2.6.0', 'lightgbm': '3.3.5', 'numba': '0.56.4', 'requests': '2.27.1', 'matplotlib': '3.7.1', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.13.1', 'kaleido': '0.2.1', 'statsmodels': '0.13.5', 'sktime': '0.17.1', 'tbats': '1.1.3', 'pmdarima': '2.0.3', 'psutil': '5.9.4'}, 'python': {'version': '3.9.16', 'machine': 'x86_64'}}
+  warnings.warn(
+
