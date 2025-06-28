@@ -4,3 +4,4 @@ scikit-learn
 seaborn
 matplotlib
 requests
+pycaret==3.2.0
