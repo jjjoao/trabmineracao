@@ -36,7 +36,7 @@ def download_file_from_google_drive(id, destination):
 
 # --- CARREGAMENTO DO MODELO ---
 # O modelo agora é carregado diretamente do repositório do GitHub.
-MODEL_PATH = 'modelo_final (3).pkl'
+MODEL_PATH = 'modelo_final2.pkl'
 
 @st.cache_resource
 def load_model(model_path):
