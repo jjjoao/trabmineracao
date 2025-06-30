@@ -34,6 +34,7 @@ def download_file_from_google_drive(id, destination):
                 f.write(chunk)
 
 # --- CARREGAMENTO DO MODELO ---
+# O modelo agora é carregado diretamente do repositório do GitHub.
 MODEL_PATH = 'modelo_final (3).pkl'
 
 @st.cache_resource
@@ -128,21 +129,108 @@ elif pagina == 'Previsão de Interesse no Trabalho':
     st.markdown("Preencha os campos abaixo com as informações do perfil a ser analisado. O modelo irá prever se o interesse no trabalho será **'Sim'** ou **'Não'**.")
     st.markdown('---')
 
-    def preprocess_input(user_data, expected_cols):
-        # Cria um DataFrame com os dados brutos do usuário
-        input_df = pd.DataFrame(user_data, index=[0])
+    # CORREÇÃO: Replicando o pré-processamento do notebook EXATAMENTE.
+    def preprocess_input(user_data):
+        df = pd.DataFrame(user_data, index=[0])
+
+        # Gender
+        dummiesg = pd.get_dummies(df['Gender'], drop_first=True)
+        df = pd.concat([df, dummiesg], axis=1)
+
+        # Country
+        dummiesc = pd.get_dummies(df['Country'], drop_first=True)
+        df = pd.concat([df, dummiesc], axis=1)
+
+        # Occupation
+        dummieso = pd.get_dummies(df['Occupation'], drop_first=True)
+        df = pd.concat([df, dummieso], axis=1)
+        df = df.rename(columns={'Housewife': 'occupation:Housewife', 'Student': 'occupation:Student', 'Corporate': 'occupation:Corporate', 'Others': 'occupation:Others'})
+
+        # self_employed
+        dummiesse = pd.get_dummies(df['self_employed'], drop_first=True)
+        df = pd.concat([df, dummiesse], axis=1)
+        df = df.rename(columns={'Yes': 'SelfEmployed'})
+
+        # family_history
+        dummiesfh = pd.get_dummies(df['family_history'], drop_first=True)
+        df = pd.concat([df, dummiesfh], axis=1)
+        df = df.rename(columns={'Yes': 'FamilyHistory'})
+
+        # treatment
+        dummiest = pd.get_dummies(df['treatment'], drop_first=True)
+        df = pd.concat([df, dummiest], axis=1)
+        df = df.rename(columns={'Yes': 'Treatment'})
+
+        # Days_Indoors
+        dummiesdi = pd.get_dummies(df['Days_Indoors'], drop_first=True)
+        df = pd.concat([df, dummiesdi], axis=1)
+        df = df.rename(columns={'1-14 days': 'Days_Indoors:1-14', '31-60 days': 'Days_Indoors:31-60', 'Go out Every day': 'Days_Indoors:Go out Every day', 'More than 2 months': 'Days_Indoors:60+', '15-30 days': 'Days_Indoors:15-30' })
+
+        # Growing_Stress
+        dummiesgs = pd.get_dummies(df['Growing_Stress'], drop_first=True)
+        df = pd.concat([df, dummiesgs], axis=1)
+        df = df.rename(columns={'Yes': 'Growing_Stress: Yes', 'Maybe': 'Growing_Stress: Maybe', 'No': 'Growing_Stress: No'})
+
+        # Changes_Habits
+        dummiesch = pd.get_dummies(df['Changes_Habits'], drop_first=True)
+        df = pd.concat([df, dummiesch], axis=1)
+        df = df.rename(columns={'Yes': 'Changes_Habits: Yes', 'Maybe': 'Changes_Habits: Maybe', 'No': 'Changes_Habits: No'})
+
+        # Mental_Health_History
+        dummiesmhh = pd.get_dummies(df['Mental_Health_History'], drop_first=True)
+        df = pd.concat([df, dummiesmhh], axis=1)
+        df = df.rename(columns={'Yes': 'Mental_Health_History: Yes', 'Maybe': 'Mental_Health_History: Maybe', 'No': 'Mental_Health_History: No'})
+
+        # Mood_Swings
+        dummiesms = pd.get_dummies(df['Mood_Swings'], drop_first=True)
+        df = pd.concat([df, dummiesms], axis=1)
+        df = df.rename(columns={'Medium': 'Mood_Swings: Medium', 'Low': 'Mood_Swings: Low', 'High': 'Mood_Swings: High'})
+
+        # Coping_Struggles
+        dummiescs = pd.get_dummies(df['Coping_Struggles'], drop_first=True)
+        df = pd.concat([df, dummiescs], axis=1)
+        df = df.rename(columns={'Yes': 'CopingStruggles'})
+
+        # Social_Weakness
+        dummiessw = pd.get_dummies(df['Social_Weakness'], drop_first=True)
+        df = pd.concat([df, dummiessw], axis=1)
+        df = df.rename(columns={'Yes': 'Social_Weakness: Yes', 'Maybe': 'Social_Weakness: Maybe', 'No': 'Social_Weakness: No'})
+
+        # mental_health_interview
+        dummiesmhi = pd.get_dummies(df['mental_health_interview'], drop_first=True)
+        df = pd.concat([df, dummiesmhi], axis=1)
+        df = df.rename(columns={'Yes': 'mental_health_interview: Yes', 'Maybe': 'mental_health_interview: Maybe', 'No': 'mental_health_interview: No'})
+
+        # care_options
+        dummiesco = pd.get_dummies(df['care_options'], drop_first=True)
+        df = pd.concat([df, dummiesco], axis=1)
+        df = df.rename(columns={'Yes': 'care_options: Yes', 'Not sure': 'care_options: Not sure', 'No': 'care_options: No'})
         
-        # Aplica o One-Hot Encoding
-        input_df_processed = pd.get_dummies(input_df, drop_first=True)
+        # Remove as colunas originais que foram transformadas
+        cols_to_drop = ['Gender', 'Country', 'Occupation', 'self_employed', 'family_history', 'treatment', 'Days_Indoors', 'Growing_Stress', 'Changes_Habits', 'Mental_Health_History', 'Mood_Swings', 'Coping_Struggles', 'Social_Weakness', 'mental_health_interview', 'care_options']
+        df = df.drop(columns=cols_to_drop)
+
+        # Lista de todas as colunas que o modelo espera, na ordem correta.
+        # Esta lista é crucial e deve corresponder exatamente ao seu dataframe de treinamento.
+        expected_cols = [
+            'age', 'Male', 'Canada', 'United States', 'occupation:Corporate', 
+            'occupation:Housewife', 'occupation:Others', 'occupation:Student', 
+            'SelfEmployed', 'FamilyHistory', 'Treatment', 'Days_Indoors:15-30', 
+            'Days_Indoors:31-60', 'Days_Indoors:Go out Every day', 
+            'Days_Indoors:More than 2 months', 'Growing_Stress:No', 'Growing_Stress:Yes', 
+            'Changes_Habits:No', 'Changes_Habits:Yes', 'Mental_Health_History:No', 
+            'Mental_Health_History:Yes', 'Mood_Swings:Low', 'Mood_Swings:Medium', 
+            'CopingStruggles', 'Social_Weakness:No', 'Social_Weakness:Yes', 
+            'mental_health_interview:No', 'mental_health_interview:Yes', 
+            'care_options:Not sure', 'care_options:Yes'
+        ]
         
-        # Garante que o dataframe final tenha exatamente as colunas esperadas pelo modelo
-        # Adiciona colunas faltantes com valor 0 e remove colunas extras
-        final_df = pd.DataFrame(columns=expected_cols)
-        final_df = pd.concat([final_df, input_df_processed])
-        final_df = final_df.fillna(0)
+        # Alinhamento final para garantir que todas as colunas esperadas existam
+        for col in expected_cols:
+            if col not in df.columns:
+                df[col] = 0
         
-        # Retorna apenas as colunas esperadas na ordem correta
-        return final_df[expected_cols]
+        return df[expected_cols]
 
     # --- Coleta de Dados do Usuário ---
     st.sidebar.header("Dados para Previsão")
@@ -150,7 +238,7 @@ elif pagina == 'Previsão de Interesse no Trabalho':
     user_inputs = {}
     user_inputs['age'] = st.sidebar.number_input("Idade", min_value=1, max_value=100, value=30)
     user_inputs['Gender'] = st.sidebar.selectbox("Gênero", ['Female', 'Male'])
-    user_inputs['Country'] = st.sidebar.selectbox("País", ['United States', 'Canada', 'Australia', 'Belgium', 'Bosnia and Herzegovina', 'Brazil', 'Colombia', 'Costa Rica', 'Croatia', 'Czech Republic', 'Denmark', 'Finland', 'France', 'Georgia', 'Germany', 'Greece', 'India', 'Ireland', 'Israel', 'Italy', 'Mexico', 'Moldova', 'Netherlands', 'New Zealand', 'Nigeria', 'Philippines', 'Poland', 'Portugal', 'Russia', 'Singapore', 'South Africa', 'Sweden', 'Switzerland', 'Thailand', 'United Kingdom'])
+    user_inputs['Country'] = st.sidebar.selectbox("País", ['United States', 'Canada', 'Australia', 'Afghanistan'])
     user_inputs['Occupation'] = st.sidebar.selectbox("Ocupação", ['Student', 'Corporate', 'Business', 'Housewife', 'Others'])
     user_inputs['self_employed'] = st.sidebar.radio("É autônomo?", ['No', 'Yes'])
     user_inputs['family_history'] = st.sidebar.radio("Possui histórico familiar de doença mental?", ['No', 'Yes'])
@@ -167,18 +255,16 @@ elif pagina == 'Previsão de Interesse no Trabalho':
 
     if st.button('**APLICAR O MODELO**'):
         if model:
-            # A lista exata de colunas que o seu modelo espera, na ordem correta.
-            expected_cols = ['Male', 'Belgium', 'Bosnia and Herzegovina', 'Brazil', 'Canada', 'Colombia', 'Costa Rica', 'Croatia', 'Czech Republic', 'Denmark', 'Finland', 'France', 'Georgia', 'Germany', 'Greece', 'India', 'Ireland', 'Israel', 'Italy', 'Mexico', 'Moldova', 'Netherlands', 'New Zealand', 'Nigeria', 'Philippines', 'Poland', 'Portugal', 'Russia', 'Singapore', 'South Africa', 'Sweden', 'Switzerland', 'Thailand', 'United Kingdom', 'United States', 'occupationCorporate', 'occupationHousewife', 'occupationOthers', 'occupationStudent', 'SelfEmployed', 'FamilyHistory', 'Treatment', 'Days_Indoors15-30', 'Days_Indoors31-60', 'Days_IndoorsGo out Every day', 'Days_Indoors60+', 'Growing_Stress No', 'Growing_Stress Yes', 'Changes_Habits No', 'Changes_Habits Yes', 'Mental_Health_History No', 'Mental_Health_History Yes', 'Mood_Swings Low', 'Mood_Swings Medium', 'CopingStruggles', 'Social_Weakness No', 'Social_Weakness Yes', 'mental_health_interview No', 'mental_health_interview Yes', 'care_options Not sure', 'care_options Yes']
-
-            # Pré-processa os dados do usuário, garantindo a correspondência com as colunas esperadas
-            input_df_processed = preprocess_input(user_inputs, expected_cols)
+            # Pré-processa os dados do usuário antes de enviar para o modelo
+            input_df_processed = preprocess_input(user_inputs)
             
-            # O modelo agora recebe os dados no formato exato que ele espera
+            # O modelo agora recebe os dados já no formato que ele espera
             prediction = model.predict(input_df_processed)
             prediction_proba = model.predict_proba(input_df_processed)
             
             st.subheader("Resultado da Predição")
             
+            # O PyCaret 3.x retorna as previsões e probabilidades em colunas específicas
             resultado = prediction['prediction_label'][0]
             probabilidade = prediction['prediction_score'][0]
             
