@@ -129,6 +129,80 @@ elif pagina == 'Previsão de Interesse no Trabalho':
     st.markdown("Preencha os campos abaixo com as informações do perfil a ser analisado. O modelo irá prever se o interesse no trabalho será **'Sim'** ou **'Não'**.")
     st.markdown('---')
 
+    # CORREÇÃO: Reintroduzindo a função de pré-processamento manual
+    def preprocess_input(user_data):
+        # Cria um DataFrame com os dados brutos do usuário
+        input_df = pd.DataFrame(user_data, index=[0])
+        
+        # Aplica o One-Hot Encoding exatamente como no seu notebook
+        # O modelo espera receber os dados já processados desta forma
+        
+        # Gender
+        dummiesg = pd.get_dummies(input_df['Gender'], prefix='Gender', drop_first=True)
+        input_df = pd.concat([input_df, dummiesg], axis=1)
+
+        # Country
+        dummiesc = pd.get_dummies(input_df['Country'], prefix='Country', drop_first=True)
+        input_df = pd.concat([input_df, dummiesc], axis=1)
+
+        # Occupation
+        dummieso = pd.get_dummies(input_df['Occupation'], prefix='occupation', drop_first=True)
+        input_df = pd.concat([input_df, dummieso], axis=1)
+
+        # self_employed
+        dummiesse = pd.get_dummies(input_df['self_employed'], prefix='self_employed', drop_first=True)
+        input_df = pd.concat([input_df, dummiesse], axis=1)
+
+        # family_history
+        dummiesfh = pd.get_dummies(input_df['family_history'], prefix='family_history', drop_first=True)
+        input_df = pd.concat([input_df, dummiesfh], axis=1)
+
+        # treatment
+        dummiest = pd.get_dummies(input_df['treatment'], prefix='treatment', drop_first=True)
+        input_df = pd.concat([input_df, dummiest], axis=1)
+
+        # Days_Indoors
+        dummiesdi = pd.get_dummies(input_df['Days_Indoors'], prefix='Days_Indoors', drop_first=True)
+        input_df = pd.concat([input_df, dummiesdi], axis=1)
+
+        # Growing_Stress
+        dummiesgs = pd.get_dummies(input_df['Growing_Stress'], prefix='Growing_Stress', drop_first=True)
+        input_df = pd.concat([input_df, dummiesgs], axis=1)
+
+        # Changes_Habits
+        dummiesch = pd.get_dummies(input_df['Changes_Habits'], prefix='Changes_Habits', drop_first=True)
+        input_df = pd.concat([input_df, dummiesch], axis=1)
+
+        # Mental_Health_History
+        dummiesmhh = pd.get_dummies(input_df['Mental_Health_History'], prefix='Mental_Health_History', drop_first=True)
+        input_df = pd.concat([input_df, dummiesmhh], axis=1)
+
+        # Mood_Swings
+        dummiesms = pd.get_dummies(input_df['Mood_Swings'], prefix='Mood_Swings', drop_first=True)
+        input_df = pd.concat([input_df, dummiesms], axis=1)
+
+        # Coping_Struggles
+        dummiescs = pd.get_dummies(input_df['Coping_Struggles'], prefix='Coping_Struggles', drop_first=True)
+        input_df = pd.concat([input_df, dummiescs], axis=1)
+        
+        # Social_Weakness
+        dummiessw = pd.get_dummies(input_df['Social_Weakness'], prefix='Social_Weakness', drop_first=True)
+        input_df = pd.concat([input_df, dummiessw], axis=1)
+        
+        # mental_health_interview
+        dummiesmhi = pd.get_dummies(input_df['mental_health_interview'], prefix='mental_health_interview', drop_first=True)
+        input_df = pd.concat([input_df, dummiesmhi], axis=1)
+        
+        # care_options
+        dummiesco = pd.get_dummies(input_df['care_options'], prefix='care_options', drop_first=True)
+        input_df = pd.concat([input_df, dummiesco], axis=1)
+        
+        # Remove as colunas originais que foram transformadas
+        cols_to_drop = ['Gender', 'Country', 'Occupation', 'self_employed', 'family_history', 'treatment', 'Days_Indoors', 'Growing_Stress', 'Changes_Habits', 'Mental_Health_History', 'Mood_Swings', 'Coping_Struggles', 'Social_Weakness', 'mental_health_interview', 'care_options']
+        input_df = input_df.drop(columns=cols_to_drop)
+
+        return input_df
+
     # --- Coleta de Dados do Usuário ---
     st.sidebar.header("Dados para Previsão")
 
@@ -152,17 +226,12 @@ elif pagina == 'Previsão de Interesse no Trabalho':
 
     if st.button('**APLICAR O MODELO**'):
         if model:
-            # Cria um DataFrame com os dados brutos, exatamente como o PyCaret espera
-            input_df = pd.DataFrame(user_inputs, index=[0])
+            # Pré-processa os dados do usuário antes de enviar para o modelo
+            input_df_processed = preprocess_input(user_inputs)
             
-            # CORREÇÃO: Adicionando a coluna 'Timestamp' que o modelo do PyCaret espera
-            # O erro KeyError indica que o pipeline foi treinado com esta coluna.
-            # Usamos a data e hora atuais como um valor padrão.
-            input_df['Timestamp'] = pd.to_datetime('now').strftime("%Y-%m-%d %H:%M:%S")
-
-            # O PyCaret agora fará todo o pré-processamento interno
-            prediction = model.predict(input_df)
-            prediction_proba = model.predict_proba(input_df)
+            # O modelo agora recebe os dados já no formato que ele espera
+            prediction = model.predict(input_df_processed)
+            prediction_proba = model.predict_proba(input_df_processed)
             
             st.subheader("Resultado da Predição")
             
