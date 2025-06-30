@@ -206,11 +206,28 @@ elif pagina == 'Previsão de Interesse no Trabalho':
         df = pd.concat([df, dummiesco], axis=1)
         df = df.rename(columns={'Yes': 'care_options: Yes', 'Not sure': 'care_options: Not sure', 'No': 'care_options: No'})
         
-        # Remove as colunas originais que foram transformadas
-        cols_to_drop = ['Gender', 'Country', 'Occupation', 'self_employed', 'family_history', 'treatment', 'Days_Indoors', 'Growing_Stress', 'Changes_Habits', 'Mental_Health_History', 'Mood_Swings', 'Coping_Struggles', 'Social_Weakness', 'mental_health_interview', 'care_options']
-        df = df.drop(columns=cols_to_drop)
-
-        return df
+        # Lista de todas as colunas que o modelo espera, na ordem correta.
+        # Esta lista é crucial e deve corresponder exatamente ao seu dataframe de treinamento.
+        expected_cols = [
+            'age', 'Male', 'United States', 'occupation:Housewife', 
+            'occupation:Student', 'occupation:Corporate', 'occupation:Others', 
+            'SelfEmployed', 'FamilyHistory', 'Treatment', 'Days_Indoors:1-14', 
+            'Days_Indoors:31-60', 'Days_Indoors:Go out Every day', 
+            'Days_Indoors:More than 2 months', 'Days_Indoors:15-30', 
+            'Growing_Stress:No', 'Growing_Stress:Yes', 'Changes_Habits:No', 
+            'Changes_Habits:Yes', 'Mental_Health_History:No', 'Mental_Health_History:Yes',
+            'Mood_Swings:Low', 'Mood_Swings:Medium', 'CopingStruggles', 
+            'Social_Weakness:No', 'Social_Weakness:Yes', 'mental_health_interview:No', 
+            'mental_health_interview:Yes', 'care_options:Not sure', 'care_options:Yes'
+        ]
+        
+        # Adiciona colunas que podem estar faltando no input do usuário (com valor 0)
+        for col in expected_cols:
+            if col not in df.columns:
+                df[col] = 0
+        
+        # Garante que a ordem e o conjunto de colunas sejam exatamente os mesmos do treinamento
+        return df[expected_cols]
 
     # --- Coleta de Dados do Usuário ---
     st.sidebar.header("Dados para Previsão")
