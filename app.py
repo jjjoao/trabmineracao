@@ -210,24 +210,7 @@ elif pagina == 'Previsão de Interesse no Trabalho':
         cols_to_drop = ['Gender', 'Country', 'Occupation', 'self_employed', 'family_history', 'treatment', 'Days_Indoors', 'Growing_Stress', 'Changes_Habits', 'Mental_Health_History', 'Mood_Swings', 'Coping_Struggles', 'Social_Weakness', 'mental_health_interview', 'care_options']
         df = df.drop(columns=cols_to_drop)
 
-        # Lista de todas as colunas esperadas pelo modelo (obtida do seu notebook)
-        expected_cols = ['age', 'Male', 'Canada', 'United States', 'occupation:Corporate', 
-                         'occupation:Housewife', 'occupation:Others', 'occupation:Student', 
-                         'SelfEmployed', 'FamilyHistory', 'Treatment', 'Days_Indoors:15-30', 
-                         'Days_Indoors:31-60', 'Days_Indoors:Go out Every day', 
-                         'Days_Indoors:More than 2 months', 'Growing_Stress:No', 'Growing_Stress:Yes', 
-                         'Changes_Habits:No', 'Changes_Habits:Yes', 'Mental_Health_History:No', 
-                         'Mental_Health_History:Yes', 'Mood_Swings:Low', 'Mood_Swings:Medium', 
-                         'CopingStruggles', 'Social_Weakness:No', 'Social_Weakness:Yes', 
-                         'mental_health_interview:No', 'mental_health_interview:Yes', 
-                         'care_options:Not sure', 'care_options:Yes']
-        
-        # Alinhamento final para garantir que todas as colunas esperadas existam
-        for col in expected_cols:
-            if col not in df.columns:
-                df[col] = 0
-        
-        return df[expected_cols]
+        return df
 
     # --- Coleta de Dados do Usuário ---
     st.sidebar.header("Dados para Previsão")
