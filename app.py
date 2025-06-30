@@ -28,7 +28,6 @@ def download_file_from_google_drive(id, destination):
         params = {'id': id, 'confirm': token}
         response = session.get(URL, params=params, stream=True)
     
-    # Salva o conteúdo baixado no arquivo de destino
     with open(destination, "wb") as f:
         for chunk in response.iter_content(32768):
             if chunk:
@@ -55,7 +54,6 @@ def load_model(model_path):
 model = load_model(MODEL_PATH)
 
 # --- CARREGAMENTO DO DATASET PARA O DASHBOARD ---
-# Esta parte continua baixando do Google Drive, pois o arquivo .csv é muito grande para o GitHub.
 DATASET_ID = '1ASanAI-8GIXbBsek87_WiaHQCM5FMRxA'
 DATASET_PATH = 'mental_health.csv'
 
@@ -114,7 +112,6 @@ elif pagina == 'Dashboard Interativo':
             col1, col2 = st.columns([1, 2])
             with col1:
                 st.metric('Indivíduos na Seleção', dados_filtrados.shape[0])
-                # Métrica corrigida para mostrar a moda (valor mais comum) em vez da média
                 mood_mode = dados_filtrados['Mood_Swings'].mode()[0]
                 st.metric('Humor Mais Comum', mood_mode)
                 st.metric('Procuraram Tratamento', '{:.2%}'.format(dados_filtrados['treatment'].value_counts(normalize=True).get('Yes', 0)))
@@ -132,46 +129,10 @@ elif pagina == 'Previsão de Interesse no Trabalho':
     st.markdown("Preencha os campos abaixo com as informações do perfil a ser analisado. O modelo irá prever se o interesse no trabalho será **'Sim'** ou **'Não'**.")
     st.markdown('---')
 
-    def preprocess_input(user_data):
-        processed_data = {}
-        processed_data['Male'] = 1 if user_data['Gender'] == 'Male' else 0
-        countries = ['Australia', 'Canada', 'United States']
-        for country in countries:
-            processed_data[country] = 1 if user_data['Country'] == country else 0
-        occupations = {'occupation:Corporate': 'Corporate', 'occupation:Housewife': 'Housewife', 'occupation:Others': 'Others', 'occupation:Student': 'Student'}
-        for col_name, occupation_val in occupations.items():
-            processed_data[col_name] = 1 if user_data['Occupation'] == occupation_val else 0
-        processed_data['SelfEmployed'] = 1 if user_data['self_employed'] == 'Yes' else 0
-        processed_data['FamilyHistory'] = 1 if user_data['family_history'] == 'Yes' else 0
-        processed_data['Treatment'] = 1 if user_data['treatment'] == 'Yes' else 0
-        days_map = {'Days_Indoors:1-14': '1-14 days', 'Days_Indoors:15-30': '15-30 days', 'Days_Indoors:31-60': '31-60 days', 'Days_Indoors:60+': 'More than 2 months', 'Days_Indoors:Go out Every day': 'Go out Every day'}
-        for col_name, day_val in days_map.items():
-            processed_data[col_name] = 1 if user_data['Days_Indoors'] == day_val else 0
-        stress_map = {'Growing_Stress: No': 'No', 'Growing_Stress: Yes': 'Yes'}
-        for col_name, stress_val in stress_map.items():
-            processed_data[col_name] = 1 if user_data['Growing_Stress'] == stress_val else 0
-        habits_map = {'Changes_Habits: No': 'No', 'Changes_Habits: Yes': 'Yes'}
-        for col_name, habit_val in habits_map.items():
-            processed_data[col_name] = 1 if user_data['Changes_Habits'] == habit_val else 0
-        mhh_map = {'Mental_Health_History: No': 'No', 'Mental_Health_History: Yes': 'Yes'}
-        for col_name, mhh_val in mhh_map.items():
-            processed_data[col_name] = 1 if user_data['Mental_Health_History'] == mhh_val else 0
-        mood_map = {'Mood_Swings: Low': 'Low', 'Mood_Swings: Medium': 'Medium'}
-        for col_name, mood_val in mood_map.items():
-            processed_data[col_name] = 1 if user_data['Mood_Swings'] == mood_val else 0
-        processed_data['CopingStruggles'] = 1 if user_data['Coping_Struggles'] == 'Yes' else 0
-        social_map = {'Social_Weakness: No': 'No', 'Social_Weakness: Yes': 'Yes'}
-        for col_name, social_val in social_map.items():
-            processed_data[col_name] = 1 if user_data['Social_Weakness'] == social_val else 0
-        interview_map = {'mental_health_interview: No': 'No', 'mental_health_interview: Yes': 'Yes'}
-        for col_name, interview_val in interview_map.items():
-            processed_data[col_name] = 1 if user_data['mental_health_interview'] == interview_val else 0
-        care_map = {'care_options: Not sure': 'Not sure', 'care_options: Yes': 'Yes'}
-        for col_name, care_val in care_map.items():
-            processed_data[col_name] = 1 if user_data['care_options'] == care_val else 0
-        return pd.DataFrame(processed_data, index=[0])
-
+    # --- Coleta de Dados do Usuário ---
     st.sidebar.header("Dados para Previsão")
+
+    # Criando os widgets para coletar as informações
     user_inputs = {}
     user_inputs['Gender'] = st.sidebar.selectbox("Gênero", ['Female', 'Male'])
     user_inputs['Country'] = st.sidebar.selectbox("País", ['United States', 'Canada', 'Australia', 'Afghanistan'])
@@ -191,13 +152,20 @@ elif pagina == 'Previsão de Interesse no Trabalho':
 
     if st.button('**APLICAR O MODELO**'):
         if model:
-            input_df = preprocess_input(user_inputs)
+            # Cria um DataFrame com os dados brutos, exatamente como o PyCaret espera
+            input_df = pd.DataFrame(user_inputs, index=[0])
+            
+            # O PyCaret agora fará todo o pré-processamento interno
             prediction = model.predict(input_df)
             prediction_proba = model.predict_proba(input_df)
+            
             st.subheader("Resultado da Predição")
-            resultado = prediction[0]
-            probabilidade = prediction_proba[0][list(model.classes_).index(resultado)]
-            st.markdown(f"## O interesse no trabalho previsto é: **{resultado.upper()}**")
+            
+            # O PyCaret 3.x retorna as previsões e probabilidades em colunas específicas
+            resultado = prediction['prediction_label'][0]
+            probabilidade = prediction['prediction_score'][0]
+            
+            st.markdown(f"## O interesse no trabalho previsto é: **{str(resultado).upper()}**")
             st.markdown(f"### Probabilidade da predição: **{probabilidade:.2%}**")
         else:
             st.error("O modelo não está carregado. Não é possível fazer a predição.")
