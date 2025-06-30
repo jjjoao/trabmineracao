@@ -208,6 +208,8 @@ elif pagina == 'Previsão de Interesse no Trabalho':
 
     # Criando os widgets para coletar as informações
     user_inputs = {}
+    # CORREÇÃO: Adicionando a coluna 'age' que estava faltando
+    user_inputs['age'] = st.sidebar.number_input("Idade", min_value=1, max_value=100, value=30)
     user_inputs['Gender'] = st.sidebar.selectbox("Gênero", ['Female', 'Male'])
     user_inputs['Country'] = st.sidebar.selectbox("País", ['United States', 'Canada', 'Australia', 'Afghanistan'])
     user_inputs['Occupation'] = st.sidebar.selectbox("Ocupação", ['Student', 'Corporate', 'Business', 'Housewife', 'Others'])
