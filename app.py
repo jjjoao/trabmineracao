@@ -10,7 +10,7 @@ import os
 
 st.set_page_config(
     page_title="Data App - Saúde Mental",
-    page_icon="�",
+    page_icon="🧠",
     layout="wide"
 )
 
@@ -129,43 +129,108 @@ elif pagina == 'Previsão de Interesse no Trabalho':
     st.markdown("Preencha os campos abaixo com as informações do perfil a ser analisado. O modelo irá prever se o interesse no trabalho será **'Sim'** ou **'Não'**.")
     st.markdown('---')
 
-    # CORREÇÃO FINAL: Função de pré-processamento robusta e fiel à lógica do notebook
+    # CORREÇÃO: Replicando o pré-processamento do notebook EXATAMENTE.
     def preprocess_input(user_data):
         df = pd.DataFrame(user_data, index=[0])
 
-        # Lista de todas as colunas categóricas originais
-        categorical_cols = ['Gender', 'Country', 'Occupation', 'self_employed', 
-                            'family_history', 'treatment', 'Days_Indoors', 
-                            'Growing_Stress', 'Changes_Habits', 'Mental_Health_History', 
-                            'Mood_Swings', 'Coping_Struggles', 'Social_Weakness', 
-                            'mental_health_interview', 'care_options']
+        # Gender
+        dummiesg = pd.get_dummies(df['Gender'], drop_first=True)
+        df = pd.concat([df, dummiesg], axis=1)
+
+        # Country
+        dummiesc = pd.get_dummies(df['Country'], drop_first=True)
+        df = pd.concat([df, dummiesc], axis=1)
+
+        # Occupation
+        dummieso = pd.get_dummies(df['Occupation'], drop_first=True)
+        df = pd.concat([df, dummieso], axis=1)
+        df = df.rename(columns={'Housewife': 'occupation:Housewife', 'Student': 'occupation:Student', 'Corporate': 'occupation:Corporate', 'Others': 'occupation:Others'})
+
+        # self_employed
+        dummiesse = pd.get_dummies(df['self_employed'], drop_first=True)
+        df = pd.concat([df, dummiesse], axis=1)
+        df = df.rename(columns={'Yes': 'SelfEmployed'})
+
+        # family_history
+        dummiesfh = pd.get_dummies(df['family_history'], drop_first=True)
+        df = pd.concat([df, dummiesfh], axis=1)
+        df = df.rename(columns={'Yes': 'FamilyHistory'})
+
+        # treatment
+        dummiest = pd.get_dummies(df['treatment'], drop_first=True)
+        df = pd.concat([df, dummiest], axis=1)
+        df = df.rename(columns={'Yes': 'Treatment'})
+
+        # Days_Indoors
+        dummiesdi = pd.get_dummies(df['Days_Indoors'], drop_first=True)
+        df = pd.concat([df, dummiesdi], axis=1)
+        df = df.rename(columns={'1-14 days': 'Days_Indoors:1-14', '31-60 days': 'Days_Indoors:31-60', 'Go out Every day': 'Days_Indoors:Go out Every day', 'More than 2 months': 'Days_Indoors:60+', '15-30 days': 'Days_Indoors:15-30' })
+
+        # Growing_Stress
+        dummiesgs = pd.get_dummies(df['Growing_Stress'], drop_first=True)
+        df = pd.concat([df, dummiesgs], axis=1)
+        df = df.rename(columns={'Yes': 'Growing_Stress: Yes', 'Maybe': 'Growing_Stress: Maybe', 'No': 'Growing_Stress: No'})
+
+        # Changes_Habits
+        dummiesch = pd.get_dummies(df['Changes_Habits'], drop_first=True)
+        df = pd.concat([df, dummiesch], axis=1)
+        df = df.rename(columns={'Yes': 'Changes_Habits: Yes', 'Maybe': 'Changes_Habits: Maybe', 'No': 'Changes_Habits: No'})
+
+        # Mental_Health_History
+        dummiesmhh = pd.get_dummies(df['Mental_Health_History'], drop_first=True)
+        df = pd.concat([df, dummiesmhh], axis=1)
+        df = df.rename(columns={'Yes': 'Mental_Health_History: Yes', 'Maybe': 'Mental_Health_History: Maybe', 'No': 'Mental_Health_History: No'})
+
+        # Mood_Swings
+        dummiesms = pd.get_dummies(df['Mood_Swings'], drop_first=True)
+        df = pd.concat([df, dummiesms], axis=1)
+        df = df.rename(columns={'Medium': 'Mood_Swings: Medium', 'Low': 'Mood_Swings: Low', 'High': 'Mood_Swings: High'})
+
+        # Coping_Struggles
+        dummiescs = pd.get_dummies(df['Coping_Struggles'], drop_first=True)
+        df = pd.concat([df, dummiescs], axis=1)
+        df = df.rename(columns={'Yes': 'CopingStruggles'})
+
+        # Social_Weakness
+        dummiessw = pd.get_dummies(df['Social_Weakness'], drop_first=True)
+        df = pd.concat([df, dummiessw], axis=1)
+        df = df.rename(columns={'Yes': 'Social_Weakness: Yes', 'Maybe': 'Social_Weakness: Maybe', 'No': 'Social_Weakness: No'})
+
+        # mental_health_interview
+        dummiesmhi = pd.get_dummies(df['mental_health_interview'], drop_first=True)
+        df = pd.concat([df, dummiesmhi], axis=1)
+        df = df.rename(columns={'Yes': 'mental_health_interview: Yes', 'Maybe': 'mental_health_interview: Maybe', 'No': 'mental_health_interview: No'})
+
+        # care_options
+        dummiesco = pd.get_dummies(df['care_options'], drop_first=True)
+        df = pd.concat([df, dummiesco], axis=1)
+        df = df.rename(columns={'Yes': 'care_options: Yes', 'Not sure': 'care_options: Not sure', 'No': 'care_options: No'})
         
-        # Aplica o One-Hot Encoding em todas as colunas categóricas de uma vez
-        # Usar o `prefix` garante que os nomes das colunas sejam únicos e corretos
-        df_processed = pd.get_dummies(df, columns=categorical_cols, drop_first=True)
-        
+        # Remove as colunas originais que foram transformadas
+        cols_to_drop = ['Gender', 'Country', 'Occupation', 'self_employed', 'family_history', 'treatment', 'Days_Indoors', 'Growing_Stress', 'Changes_Habits', 'Mental_Health_History', 'Mood_Swings', 'Coping_Struggles', 'Social_Weakness', 'mental_health_interview', 'care_options']
+        df = df.drop(columns=cols_to_drop)
+
         # Lista de todas as colunas que o modelo espera, na ordem correta.
         # Esta lista é crucial e deve corresponder exatamente ao seu dataframe de treinamento.
         expected_cols = [
-            'age', 'Gender_Male', 'Country_Canada', 'Country_United States', 
-            'Occupation_Corporate', 'Occupation_Housewife', 'Occupation_Others', 'Occupation_Student',
-            'self_employed_Yes', 'family_history_Yes', 'treatment_Yes', 
-            'Days_Indoors_15-30 days', 'Days_Indoors_31-60 days', 'Days_Indoors_Go out Every day', 
-            'Days_Indoors_More than 2 months', 'Growing_Stress_No', 'Growing_Stress_Yes', 
-            'Changes_Habits_No', 'Changes_Habits_Yes', 'Mental_Health_History_No', 
-            'Mental_Health_History_Yes', 'Mood_Swings_Low', 'Mood_Swings_Medium', 
-            'Coping_Struggles_Yes', 'Social_Weakness_No', 'Social_Weakness_Yes', 
-            'mental_health_interview_No', 'mental_health_interview_Yes', 
-            'care_options_Not sure', 'care_options_Yes'
+            'age', 'Male', 'Canada', 'United States', 'occupation:Corporate', 
+            'occupation:Housewife', 'occupation:Others', 'occupation:Student', 
+            'SelfEmployed', 'FamilyHistory', 'Treatment', 'Days_Indoors:15-30', 
+            'Days_Indoors:31-60', 'Days_Indoors:Go out Every day', 
+            'Days_Indoors:More than 2 months', 'Growing_Stress:No', 'Growing_Stress:Yes', 
+            'Changes_Habits:No', 'Changes_Habits:Yes', 'Mental_Health_History:No', 
+            'Mental_Health_History:Yes', 'Mood_Swings:Low', 'Mood_Swings:Medium', 
+            'CopingStruggles', 'Social_Weakness:No', 'Social_Weakness:Yes', 
+            'mental_health_interview:No', 'mental_health_interview:Yes', 
+            'care_options:Not sure', 'care_options:Yes'
         ]
         
-        # Adiciona colunas que podem estar faltando no input do usuário (com valor 0)
+        # Alinhamento final para garantir que todas as colunas esperadas existam
         for col in expected_cols:
-            if col not in df_processed.columns:
-                df_processed[col] = 0
+            if col not in df.columns:
+                df[col] = 0
         
-        # Garante que a ordem e o conjunto de colunas sejam exatamente os mesmos do treinamento
-        return df_processed[expected_cols]
+        return df[expected_cols]
 
     # --- Coleta de Dados do Usuário ---
     st.sidebar.header("Dados para Previsão")
