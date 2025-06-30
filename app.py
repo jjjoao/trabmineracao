@@ -155,6 +155,11 @@ elif pagina == 'Previsão de Interesse no Trabalho':
             # Cria um DataFrame com os dados brutos, exatamente como o PyCaret espera
             input_df = pd.DataFrame(user_inputs, index=[0])
             
+            # CORREÇÃO: Adicionando a coluna 'Timestamp' que o modelo do PyCaret espera
+            # O erro KeyError indica que o pipeline foi treinado com esta coluna.
+            # Usamos a data e hora atuais como um valor padrão.
+            input_df['Timestamp'] = pd.to_datetime('now').strftime("%Y-%m-%d %H:%M:%S")
+
             # O PyCaret agora fará todo o pré-processamento interno
             prediction = model.predict(input_df)
             prediction_proba = model.predict_proba(input_df)
