@@ -77,7 +77,7 @@ pagina = st.sidebar.selectbox('Navegue pelo menu:', opcoes)
 # --- PÁGINA 1: BOAS-VINDAS ---
 if pagina == 'Boas-vindas':
     st.title('**Data App de Saúde Mental 🧠**')
-    st.header('Seja bem-vindo(a)! �')
+    st.header('Seja bem-vindo(a)! 😀')
     st.markdown("""
         Este aplicativo interativo foi desenvolvido para explorar dados sobre saúde mental
         e utilizar um modelo de Machine Learning para realizar previsões.
