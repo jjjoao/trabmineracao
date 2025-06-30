@@ -134,81 +134,37 @@ elif pagina == 'Previsão de Interesse no Trabalho':
         # Cria um DataFrame com os dados brutos do usuário
         input_df = pd.DataFrame(user_data, index=[0])
         
-        # Aplica o One-Hot Encoding exatamente como no seu notebook
-        # O modelo espera receber os dados já processados desta forma
+        # Lista de todas as colunas categóricas originais
+        categorical_cols = ['Gender', 'Country', 'Occupation', 'self_employed', 'family_history', 'treatment', 'Days_Indoors', 'Growing_Stress', 'Changes_Habits', 'Mental_Health_History', 'Mood_Swings', 'Coping_Struggles', 'Social_Weakness', 'mental_health_interview', 'care_options']
         
-        # Gender
-        dummiesg = pd.get_dummies(input_df['Gender'], prefix='Gender', drop_first=True)
-        input_df = pd.concat([input_df, dummiesg], axis=1)
-
-        # Country
-        dummiesc = pd.get_dummies(input_df['Country'], prefix='Country', drop_first=True)
-        input_df = pd.concat([input_df, dummiesc], axis=1)
-
-        # Occupation
-        dummieso = pd.get_dummies(input_df['Occupation'], prefix='occupation', drop_first=True)
-        input_df = pd.concat([input_df, dummieso], axis=1)
-
-        # self_employed
-        dummiesse = pd.get_dummies(input_df['self_employed'], prefix='self_employed', drop_first=True)
-        input_df = pd.concat([input_df, dummiesse], axis=1)
-
-        # family_history
-        dummiesfh = pd.get_dummies(input_df['family_history'], prefix='family_history', drop_first=True)
-        input_df = pd.concat([input_df, dummiesfh], axis=1)
-
-        # treatment
-        dummiest = pd.get_dummies(input_df['treatment'], prefix='treatment', drop_first=True)
-        input_df = pd.concat([input_df, dummiest], axis=1)
-
-        # Days_Indoors
-        dummiesdi = pd.get_dummies(input_df['Days_Indoors'], prefix='Days_Indoors', drop_first=True)
-        input_df = pd.concat([input_df, dummiesdi], axis=1)
-
-        # Growing_Stress
-        dummiesgs = pd.get_dummies(input_df['Growing_Stress'], prefix='Growing_Stress', drop_first=True)
-        input_df = pd.concat([input_df, dummiesgs], axis=1)
-
-        # Changes_Habits
-        dummiesch = pd.get_dummies(input_df['Changes_Habits'], prefix='Changes_Habits', drop_first=True)
-        input_df = pd.concat([input_df, dummiesch], axis=1)
-
-        # Mental_Health_History
-        dummiesmhh = pd.get_dummies(input_df['Mental_Health_History'], prefix='Mental_Health_History', drop_first=True)
-        input_df = pd.concat([input_df, dummiesmhh], axis=1)
-
-        # Mood_Swings
-        dummiesms = pd.get_dummies(input_df['Mood_Swings'], prefix='Mood_Swings', drop_first=True)
-        input_df = pd.concat([input_df, dummiesms], axis=1)
-
-        # Coping_Struggles
-        dummiescs = pd.get_dummies(input_df['Coping_Struggles'], prefix='Coping_Struggles', drop_first=True)
-        input_df = pd.concat([input_df, dummiescs], axis=1)
+        # Aplica o One-Hot Encoding em todas as colunas categóricas
+        input_df_processed = pd.get_dummies(input_df, columns=categorical_cols, drop_first=True)
         
-        # Social_Weakness
-        dummiessw = pd.get_dummies(input_df['Social_Weakness'], prefix='Social_Weakness', drop_first=True)
-        input_df = pd.concat([input_df, dummiessw], axis=1)
+        # Lista de todas as colunas que o modelo foi treinado
+        # Esta lista deve ser obtida do seu notebook (ex: X_treino.columns)
+        # Coloquei aqui uma lista baseada no seu código de pré-processamento
+        expected_cols = ['age', 'Gender_Male', 'Country_Canada', 'Country_United States', 
+                         'occupation_Corporate', 'occupation_Housewife', 'occupation_Others', 'occupation_Student',
+                         'self_employed_Yes', 'family_history_Yes', 'treatment_Yes', 
+                         'Days_Indoors_15-30 days', 'Days_Indoors_31-60 days', 'Days_Indoors_Go out Every day', 'Days_Indoors_More than 2 months',
+                         'Growing_Stress_No', 'Growing_Stress_Yes', 'Changes_Habits_No', 'Changes_Habits_Yes',
+                         'Mental_Health_History_No', 'Mental_Health_History_Yes', 'Mood_Swings_Low', 'Mood_Swings_Medium',
+                         'Coping_Struggles_Yes', 'Social_Weakness_No', 'Social_Weakness_Yes',
+                         'mental_health_interview_No', 'mental_health_interview_Yes', 'care_options_Not sure', 'care_options_Yes']
         
-        # mental_health_interview
-        dummiesmhi = pd.get_dummies(input_df['mental_health_interview'], prefix='mental_health_interview', drop_first=True)
-        input_df = pd.concat([input_df, dummiesmhi], axis=1)
+        # Adiciona colunas que podem estar faltando no input do usuário (com valor 0)
+        for col in expected_cols:
+            if col not in input_df_processed.columns:
+                input_df_processed[col] = 0
         
-        # care_options
-        dummiesco = pd.get_dummies(input_df['care_options'], prefix='care_options', drop_first=True)
-        input_df = pd.concat([input_df, dummiesco], axis=1)
-        
-        # Remove as colunas originais que foram transformadas
-        cols_to_drop = ['Gender', 'Country', 'Occupation', 'self_employed', 'family_history', 'treatment', 'Days_Indoors', 'Growing_Stress', 'Changes_Habits', 'Mental_Health_History', 'Mood_Swings', 'Coping_Struggles', 'Social_Weakness', 'mental_health_interview', 'care_options']
-        input_df = input_df.drop(columns=cols_to_drop)
-
-        return input_df
+        # Garante que a ordem e o número de colunas sejam exatamente os mesmos do treinamento
+        return input_df_processed[expected_cols]
 
     # --- Coleta de Dados do Usuário ---
     st.sidebar.header("Dados para Previsão")
 
     # Criando os widgets para coletar as informações
     user_inputs = {}
-    # CORREÇÃO: Adicionando a coluna 'age' que estava faltando
     user_inputs['age'] = st.sidebar.number_input("Idade", min_value=1, max_value=100, value=30)
     user_inputs['Gender'] = st.sidebar.selectbox("Gênero", ['Female', 'Male'])
     user_inputs['Country'] = st.sidebar.selectbox("País", ['United States', 'Canada', 'Australia', 'Afghanistan'])
