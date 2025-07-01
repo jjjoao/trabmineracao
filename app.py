@@ -76,19 +76,39 @@ pagina = st.sidebar.selectbox('Navegue pelo menu:', opcoes)
 
 # --- PÁGINA 1: BOAS-VINDAS ---
 if pagina == 'Boas-vindas':
-    st.title('**Data App de Saúde Mental 🧠**')
-    st.header('Seja bem-vindo(a)! 😀')
+    st.title('**Data App de Análise de Saúde Mental 🧠**')
+    st.header('Descrição do Projeto e Metodologia')
+
+    # Texto atualizado conforme solicitado
     st.markdown("""
-        Este aplicativo interativo foi desenvolvido para explorar dados sobre saúde mental
-        e utilizar um modelo de Machine Learning para realizar previsões.
-        **O que você pode fazer aqui?**
-        - **Navegar pelo Dashboard:** Explore visualizações e métricas do dataset original.
-        - **Realizar Predições:** Use nosso modelo treinado para prever o interesse de um indivíduo
-          em seu trabalho com base em um perfil.
-        Use o menu na barra lateral à esquerda para navegar entre as seções.
-        ---
-        *Este é um projeto de estudo e não substitui uma avaliação profissional de saúde.*
+        Este conjunto de dados parece conter uma variedade de recursos relacionados à análise de texto, análise de sentimentos e indicadores psicológicos, provavelmente derivados de postagens ou dados de texto. Alguns recursos incluem índices de legibilidade, como o Índice de Legibilidade Automatizado (ARI), o Índice de Coleman Liau e o Nível de Ensino Flesch-Kincaid, bem como pontuações de análise de sentimentos, como sentimentos compostos, negativos, neutros e positivos. Além disso, há recursos relacionados a aspectos psicológicos, como estresse econômico, isolamento, uso de substâncias e estresse doméstico. O conjunto de dados parece abranger uma ampla gama de atributos linguísticos, psicológicos e comportamentais, potencialmente adequados para analisar tópicos relacionados à saúde mental em comunidades online ou dados de texto.
+
+        O conjunto de dados fornece insights valiosos sobre saúde mental, analisando padrões linguísticos, sentimentos e indicadores psicológicos em dados de texto. Pesquisadores e cientistas de dados podem obter uma melhor compreensão de como os problemas de saúde mental se manifestam na comunicação online.
+
+        Com uma ampla gama de recursos, incluindo pontuações de análise de sentimentos e indicadores psicológicos, o conjunto de dados oferece oportunidades para o desenvolvimento de modelos preditivos para identificar ou prever resultados de saúde mental com base em dados textuais.
     """)
+    st.markdown("---")
+    st.subheader("Construção do Modelo")
+    st.markdown("""
+        O modelo utilizado é uma combinação de dois modelos: um **Extreme Gradient Boosting** e um **Random Forest**.
+        
+        Inicialmente, foram removidos os indivíduos que responderam "Maybe" para a variável de interesse `Work_Interest` para facilitar a construção do modelo, já que esses não eram de interesse para o estudo. Foi realizado um pré-processamento dos dados, transformando todas as variáveis categóricas com *n* categorias em *n-1* variáveis, e uma separação dos dados entre treino e teste, sendo 70% para treino e 30% para teste. Além disso, foram feitos 10 folds de validação cruzada com o conjunto de treino.
+        
+        Assim, foram comparados 15 modelos de machine learning através das métricas Acurácia, AUC, Recall, Precisão, F1-Score, Kappa e MCC. Os modelos de Random Forest e Extreme Gradient Boosting tiveram as melhores performances entre todos os outros em todas as métricas.
+        
+        Dessa forma, foi utilizado o comando `tune_model`, que realizou 10 folds de validação cruzada para selecionar os melhores hiperparâmetros que maximizem o F1-score dos modelos. Finalmente, foi feita uma combinação (ensemble) dos modelos otimizados, fazendo uma média das probabilidades preditas para determinar quais indivíduos têm interesse no trabalho e quais não têm.
+        
+        O modelo final foi testado nos 30% dos dados separados para teste, e as métricas para a classificação do modelo foram:
+    """)
+    
+    # Tabela de métricas
+    metrics_data = {
+        'Métrica': ['Accuracy', 'AUC', 'Recall', 'Prec.', 'F1', 'Kappa', 'MCC'],
+        'Valor': [0.9995, 1.0000, 0.9988, 1.0000, 0.9994, 0.9989, 0.9989]
+    }
+    metrics_df = pd.DataFrame(metrics_data)
+    st.table(metrics_df)
+
 
 # --- PÁGINA 2: DASHBOARD INTERATIVO ---
 elif pagina == 'Dashboard Interativo':
@@ -254,4 +274,3 @@ elif pagina == 'Previsão de Interesse no Trabalho':
             st.markdown(f"### Probabilidade da predição: **{probabilidade:.2%}**")
         else:
             st.error("O modelo não está carregado. Não é possível fazer a predição.")
-
