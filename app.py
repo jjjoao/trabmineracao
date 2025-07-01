@@ -60,10 +60,9 @@ DATASET_PATH = 'mental_health.csv'
 def load_data(file_id, dataset_path):
     """Baixa e carrega o dataset para o dashboard."""
     if not os.path.exists(dataset_path):
-        st.info("Dataset não encontrado. Baixando do Google Drive...")
+        # As mensagens de texto foram removidas, conforme solicitado.
         with st.spinner("Baixando dataset..."):
             download_file_from_google_drive(file_id, dataset_path)
-            st.success("Download do dataset concluído!")
     try:
         return pd.read_csv(dataset_path)
     except Exception as e:
