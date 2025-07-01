@@ -104,7 +104,7 @@ if pagina == 'Boas-vindas':
     # Tabela de métricas
     metrics_data = {
         'Métrica': ['Accuracy', 'AUC', 'Recall', 'Prec.', 'F1', 'Kappa', 'MCC'],
-        'Valor': [0.9995, 1.0000, 0.9988, 1.0000, 0.9994, 0.9989, 0.9989]
+        'Valor': [0.9979, 1.0000, 0.9984, 0.9968, 0.9976, 0.9958, 0.9958]
     }
     metrics_df = pd.DataFrame(metrics_data)
     # Transpõe o DataFrame para exibição horizontal
