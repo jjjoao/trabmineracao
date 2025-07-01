@@ -107,7 +107,8 @@ if pagina == 'Boas-vindas':
         'Valor': [0.9995, 1.0000, 0.9988, 1.0000, 0.9994, 0.9989, 0.9989]
     }
     metrics_df = pd.DataFrame(metrics_data)
-    st.table(metrics_df)
+    # Transpõe o DataFrame para exibição horizontal
+    st.table(metrics_df.set_index('Métrica').T)
 
 
 # --- PÁGINA 2: DASHBOARD INTERATIVO ---
